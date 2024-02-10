@@ -1,7 +1,7 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import "../styles/Portfolio.css"
 
-export default function VideoSlide({ image, name }) {
+export default function VideoSlide({ image, name, selectCircle, rate }) {
 	return (
 		<div className="cursor-pointer videoEditing">
 			<div>
@@ -10,11 +10,16 @@ export default function VideoSlide({ image, name }) {
 			<div className="font-primary text-center text-2xl text-custom-secondary w-[180px] absolute">
 				{name}
 			</div>
-			<div className="videoRate">
+			<div className="videoRate ">
 				<div className="videoSkill">
 					<div className="videoOuter">
 						<div className="videoInner">
-							<div className="numb" id="number"></div>
+							<div
+								id="number"
+								className="font-primary text-2xl text-custom-third"
+							>
+								{rate}%
+							</div>
 						</div>
 					</div>
 				</div>
@@ -22,8 +27,8 @@ export default function VideoSlide({ image, name }) {
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					version="1.1"
-					width="180px"
-					height="180px"
+					width="160"
+					height="160"
 					position="absolute"
 					top="0"
 					left="0"
@@ -35,7 +40,13 @@ export default function VideoSlide({ image, name }) {
 						</linearGradient>
 					</defs>
 
-					<circle cx="90" cy="90" r="78" strokeLinecap="round" />
+					<circle
+						cx="80"
+						cy="80"
+						r="70"
+						stroke-linecap="round"
+						className={selectCircle}
+					/>
 				</svg>
 			</div>
 		</div>

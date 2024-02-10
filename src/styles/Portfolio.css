@@ -86,3 +86,32 @@
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 }
+
+/* .overflowscroll::-webkit-scrollbar {
+	width: 2em;
+} */
+
+.overflowscroll::-webkit-scrollbar-track {
+	background: hsl(120, -50%, 75% / 1);
+}
+
+.overflowscroll {
+	overflow-x: auto;
+}
+
+.overflowscroll::-webkit-scrollbar {
+	height: 10px;
+}
+
+.overflowscroll::-webkit-scrollbar-thumb {
+	background-color: #3498db;
+	border-radius: 6px;
+}
+
+.overflowscroll::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+}
+
+.overflowscroll::-webkit-scrollbar-thumb:hover {
+	background-color: #1e6091;
+}

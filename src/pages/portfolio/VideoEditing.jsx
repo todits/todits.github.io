@@ -1,32 +1,10 @@
 import React, { useState } from "react"
 import Footer from "../../components/Footer"
 import VideoSlide from "../../components/VideoSlide"
+import { videoEditingIcon, videoThumbnails } from "../../records/records"
 
 export default function VideoEditing() {
 	const [videosrc, setVideosrc] = useState("")
-
-	const videoThumbnails = [
-		{
-			id: 1,
-			source:
-				"https://drive.google.com/file/d/1N1JIP0GqiUW2JpiC3C5wEjT3djgJphCM/preview",
-			image: "video/sample_video1.png",
-			title: "sample",
-		},
-		{
-			id: 2,
-			source:
-				"https://drive.google.com/file/d/1PPOAd0tWroNJjez1hdXFja_a2QPJh0p3/preview",
-			image: "video/sample_video1.png",
-			title: "Graduation Teaser",
-		},
-		{
-			id: 3,
-			source: "https://www.youtube.com/embed/IJ_14huTj6E?autoplay=1",
-			image: "video/sample_video1.png",
-			title: "sample3",
-		},
-	]
 
 	const handleClickVideo = (value) => {
 		setVideosrc(value)
@@ -35,15 +13,15 @@ export default function VideoEditing() {
 	return (
 		<div
 			name="videoEditing"
-			className="flex h-screen skillsScreen w-full from-white bg-gradient-to-b  to-custom-background"
+			className=" flex h-screen skillsScreen w-full from-white bg-gradient-to-b  to-custom-background"
 		>
 			<div className="relative">
 				<p className="portfolio font-primary inline ">Portfolio</p>
 			</div>
 
-			<div className="max-w-screen-2xl p-4 pt-20 mx-auto flex flex-col place-content-start w-full h-full">
+			<div className=" md:max-w-screen-xl  p-4 pt-20 mx-auto flex flex-col place-content-start w-full h-full">
 				<div>
-					<p className=" text-5xl font-primary  text-custom-third inline border-b-4  border-custom-third">
+					<p className=" text-4xl font-primary  text-custom-third inline border-b-4  border-custom-third">
 						Video Editing
 					</p>
 					<div className="mt-8 flex gap-8">
@@ -58,7 +36,7 @@ export default function VideoEditing() {
 											: "https://www.youtube.com/embed/IJ_14huTj6E?autoplay=1"
 									}
 									width="100%	"
-									className="left-0 rounded-xl min-h-[500px] h-[45vh]"
+									className="left-0 rounded-xl min-h-[450px] h-[40vh]"
 								></iframe>
 							</div>
 							<div className="text-2xl">{videosrc.title}</div>
@@ -66,21 +44,16 @@ export default function VideoEditing() {
 								asdasd
 							</div>
 							<div>Video Editing Background</div>
-							<div className="flex gap-[4%] justify-center">
-								<VideoSlide image="skills/Canva.png" name="Canva" />
-								<VideoSlide
-									image="skills/Powerdirector.png"
-									name="Power Director"
-								/>
-								<VideoSlide
-									image="skills/Adobepro.png"
-									name="Adobe Premier Pro"
-								/>
-								<VideoSlide
-									image="skills/Wondershare.png"
-									name="Filmora Wondershare"
-								/>
-								<VideoSlide image="skills/Capcut.png" name="Capcut" />
+							<div className="flex  justify-between">
+								{videoEditingIcon.map((videoIcon) => (
+									<VideoSlide
+										key={videoIcon.id}
+										image={videoIcon.image}
+										name={videoIcon.name}
+										selectCircle={videoIcon.selectCircle}
+										rate={videoIcon.rate}
+									/>
+								))}
 							</div>
 						</div>
 						<div className=" w-[25%] flex flex-col z-50 gap-6">

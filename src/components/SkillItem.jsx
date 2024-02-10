@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import "../styles/Skills.css"
-import { Link } from "react-scroll"
 
 export default function SkillItem({
 	text,
@@ -12,9 +11,10 @@ export default function SkillItem({
 	image6,
 	skillImages,
 	skill,
+	selectedButton,
 }) {
 	const [clickSkill, setClickSkill] = useState("")
-	const imagesExist = image1 || image2 || image3 || image4 || image5
+	const imagesExist = image1 || image2 || image3 || image4 || image5 || image6
 
 	const handleClickSkill = (value) => {
 		setClickSkill(value)
@@ -23,15 +23,12 @@ export default function SkillItem({
 	return (
 		<div>
 			{skill ? (
-				<Link
-					to={clickSkill}
-					smooth
-					duration={500}
-					onClick={() => handleClickSkill(skill)}
+				<button
+					onClick={selectedButton}
 					className="cursor-pointer skilltext select-none self-center py-10 px-5 border-8 border-custom-primary rounded-lg"
 				>
 					<div>{text}</div>
-				</Link>
+				</button>
 			) : (
 				<div className="skilltext cursor-default select-none self-center py-10 px-5 border-8 border-custom-primary rounded-lg">
 					<div>{text}</div>

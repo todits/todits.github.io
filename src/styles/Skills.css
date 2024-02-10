@@ -39,10 +39,9 @@
 }
 
 .skillImage {
-	height: 13vw;
-	max-height: 17vh;
+	height: 180px;
 	width: max-content;
-	min-height: 200px;
+	min-height: 180px;
 }
 
 .skillImages1 {
@@ -82,8 +81,8 @@
 	position: relative;
 }
 .videoOuter {
-	width: 180px;
-	height: 180px;
+	width: 160px;
+	height: 160px;
 	border-radius: 50%;
 	padding: 20px;
 	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
@@ -91,8 +90,8 @@
 }
 
 .videoInner {
-	width: 140px;
-	height: 140px;
+	width: 120px;
+	height: 120px;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
@@ -112,19 +111,47 @@
 circle {
 	fill: none;
 	stroke: url(#GradientColor);
-	stroke-width: 25px;
+	stroke-width: 20px;
 	stroke-dasharray: 450;
 	stroke-dashoffset: 450;
-	animation: anim 1s linear forwards;
+}
+.videoEditing:hover .circle1 {
+	animation: hoverAnim1 1s linear forwards;
+}
+.videoEditing:hover .circle2 {
+	animation: hoverAnim2 1s linear forwards;
+}
+.videoEditing:hover .circle3 {
+	animation: hoverAnim3 1s linear forwards;
+}
+.videoEditing:hover .circle4 {
+	animation: hoverAnim4 1s linear forwards;
+}
+.videoEditing:hover .circle5 {
+	animation: hoverAnim5 1s linear forwards;
 }
 
-@keyframes anim {
+@keyframes hoverAnim1 {
 	100% {
-		stroke-dashoffset: 0;
+		stroke-dashoffset: 90;
 	}
 }
-
-@keyframes hoverAnim {
+@keyframes hoverAnim2 {
+	100% {
+		stroke-dashoffset: 157.5;
+	}
+}
+@keyframes hoverAnim3 {
+	100% {
+		stroke-dashoffset: 157.5;
+	}
+}
+@keyframes hoverAnim4 {
+	100% {
+		stroke-dashoffset: 157.5;
+	}
+}
+@keyframes hoverAnim5 {
 	100% {
 		stroke-dashoffset: 157.5;
 	}
@@ -142,11 +169,11 @@ svg {
 	transform: scale(0);
 	transition: 0.5s;
 	margin-left: 100px;
-	margin-top: -180px;
+	margin-top: -170px;
 }
 .videoImage {
-	width: 180px;
-	height: 180px;
+	width: 160px;
+	height: auto;
 	z-index: 100;
 	position: relative;
 	transition: 0.5s ease-in-out;
@@ -164,8 +191,21 @@ svg {
 	margin-top: 180px; */
 }
 
-.videoEditing:hover .circle {
-	animation: hoverAnim 1s linear forwards;
-	animation-duration: 0.5s;
-	width: 100px;
+.selectedicon {
+	animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+	0% {
+		border-color: rgb(162 226 225 / var(--tw-border-opacity));
+		box-shadow: 0 0 0 0 rgba(0, 133, 133, 0.4);
+	}
+	50% {
+		border-color: rgb(0 128 128 / var(--tw-bg-opacity));
+		box-shadow: 0 0 0 0.5rem rgb(0, 31, 31, 0);
+	}
+	100% {
+		border-color: rgb(162 226 225 / var(--tw-border-opacity));
+		box-shadow: 0 0 0 0 rgb(0, 43, 43, 0);
+	}
 }

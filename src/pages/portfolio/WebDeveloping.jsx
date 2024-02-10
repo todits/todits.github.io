@@ -1,53 +1,9 @@
 import React from "react"
 import WebSlide from "../../components/WebSlide"
-import { Link } from "react-scroll"
 import Footer from "../../components/Footer"
+import { skills } from "../../records/records"
 
 function WebDeveloping() {
-	const skills = [
-		{
-			id: 1,
-			name: "CSS",
-			src: "skills/CSS.png",
-			color: "bg-blue-400",
-			rate: "80%",
-		},
-		{
-			id: 2,
-			name: "Tailwind",
-			src: "skills/Tailwind.png",
-			color: "bg-green-300",
-			rate: "82%",
-		},
-		{
-			id: 3,
-			name: "HTML",
-			src: "skills/Html.png",
-			color: "bg-orange-400",
-			rate: "85%",
-		},
-		{
-			id: 4,
-			name: "JAVA",
-			src: "skills/Java.png",
-			color: "bg-yellow-400",
-			rate: "85%",
-		},
-		{
-			id: 5,
-			name: "React",
-			src: "skills/React.png",
-			color: "bg-cyan-300",
-			rate: "90%",
-		},
-		{
-			id: 6,
-			name: "Laravel",
-			src: "skills/Laravel.png",
-			color: "bg-red-400",
-			rate: "80%",
-		},
-	]
 	return (
 		<div
 			name="webDeveloping"
@@ -85,21 +41,6 @@ function WebDeveloping() {
 								))}
 								<WebSlide image="skills/CSS.png" name="CSS" />
 								<WebSlide image="skills/Tailwind.png" name="Tailwind" />
-
-								{/* <WebSlide image="skills/CSS.png" name="CSS" />
-								<WebSlide image="skills/Tailwind.png" name="Tailwind" />
-								<WebSlide image="skills/Html.png" name="HTML" />
-								<WebSlide image="skills/Java.png" name="JAVA" />
-								<WebSlide image="skills/React.png" name="React" />
-								<WebSlide image="skills/Laravel.png" name="Laravel" />
-								<WebSlide image="skills/CSS.png" name="CSS" />
-								<WebSlide image="skills/Tailwind.png" name="Tailwind" />
-								<WebSlide image="skills/Html.png" name="HTML" />
-								<WebSlide image="skills/Java.png" name="JAVA" />
-								<WebSlide image="skills/React.png" name="React" />
-								<WebSlide image="skills/Laravel.png" name="Laravel" />
-								<WebSlide image="skills/CSS.png" name="CSS" />
-								<WebSlide image="skills/Tailwind.png" name="Tailwind" /> */}
 							</div>
 						</div>
 					</div>

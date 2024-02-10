@@ -1,4 +1,5 @@
 import React from "react"
+import Footer from "../../components/Footer"
 
 export default function SocialMediaManager() {
 	return (
@@ -68,6 +69,7 @@ export default function SocialMediaManager() {
 						</div>
 					</div>
 				</div>
+				<Footer />
 			</div>
 		</div>
 	)

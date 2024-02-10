@@ -5,8 +5,6 @@ import { Link } from "react-scroll"
 import "../styles/NavBar.css"
 
 export default function NavBar() {
-	const [hide, setHide] = useState("")
-	const [show, setShow] = useState(false)
 	const [active, setActive] = useState("")
 
 	const links = [
@@ -42,36 +40,26 @@ export default function NavBar() {
 	console.log(active)
 
 	return (
-		<div className=" flex justify-between items-center w-full h-16 text-black fixed bg-custom-secondary px-4 navbarbackground">
-			<div className="">
-				<button className="transitionObject font-primary text-3xl text-outline">
-					DARYL LOUIE
-				</button>
-
-				<img src={Image} alt="" className="imageHover" />
-			</div>
-
-			<ul className="hidden md:flex">
-				{links.map(({ id, link }) => (
-					<li
-						key={id}
-						className={`px-4 cursor-pointer font-primary text-xl tracking-wider text-white uppercase hover:scale-105 navbarlist ${
-							active === link ? active : ""
-						}`}
+		<ul className="hidden md:flex">
+			{links.map(({ id, link }) => (
+				<li
+					key={id}
+					className={`px-4 cursor-pointer font-primary text-xl tracking-wider text-white uppercase hover:scale-105 navbarlist ${
+						active === link ? active : ""
+					}`}
+				>
+					<Link
+						to={link}
+						smooth
+						duration={500}
+						onClick={() => activeNav(link)}
+						className="navbarlink"
 					>
-						<Link
-							to={link}
-							smooth
-							duration={500}
-							onClick={() => activeNav(link)}
-							className="navbarlink"
-						>
-							{link}
-						</Link>
-					</li>
-				))}
-			</ul>
-		</div>
+						{link}
+					</Link>
+				</li>
+			))}
+		</ul>
 	)
 }
 

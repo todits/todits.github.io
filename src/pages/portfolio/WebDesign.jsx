@@ -17,14 +17,19 @@ export default function WebDesign() {
 						Web Design
 					</p>
 				</div>
-				<div className="relative">
-					<div className="bg-black w-[500px] h-[500px] rounded-full absolute z-[0]"></div>
+				<div className="relative mt-6">
 					<div>
-						<img
-							src="/webdesign/house.png"
-							alt=""
-							className="h-[600px] absolute z-[1]"
-						/>
+						<img src="" alt="" />
+					</div>
+					<div>
+						<div className="h-[400px] mt-[100px] w-[900px] absolute rounded-[30px] bg-fuchsia-100"></div>
+						<div>
+							<img
+								src="/webdesign/house.png"
+								alt=""
+								className="h-[600px] absolute z-[1] right-0"
+							/>
+						</div>
 					</div>
 				</div>
 			</div>
