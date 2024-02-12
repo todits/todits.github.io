@@ -181,6 +181,7 @@ export const skillItems = [
 		image1: "skills/CSS.png",
 		image2: "skills/HTML.png",
 		image3: "skills/Java.png",
+		image4: "skills/React.png",
 		image5: "skills/Tailwind.png",
 		image6: "skills/Laravel.png",
 		text: "Web Developing",

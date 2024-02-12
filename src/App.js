@@ -43,15 +43,7 @@ function App() {
 				{selectedNavBar === "home" ? <Home /> : undefined}
 				{selectedNavBar === "about" ? <About /> : undefined}
 				{selectedNavBar === "skills" ? <Skills /> : undefined}
-				{selectedNavBar === "skills" ? <WebDesign /> : undefined}
-				{selectedNavBar === "skills" ? <WebDeveloping /> : undefined}
-				{selectedNavBar === "skills" ? <PhotoEditing /> : undefined}
-				{selectedNavBar === "skills" ? <EmailMarketing /> : undefined}
-				{selectedNavBar === "skills" ? <VideoEditing /> : undefined}
-				{selectedNavBar === "skills" ? <DigitalArt /> : undefined}
-				{selectedNavBar === "skills" ? <SocialMediaManager /> : undefined}
 				{selectedNavBar === "skills" ? <Portfolio></Portfolio> : undefined}
-				{selectedNavBar === "skills" ? <ArtGallery /> : undefined}
 				{selectedNavBar === "experience" ? <Experience /> : undefined}
 				{selectedNavBar === "contact" ? <Contact /> : undefined}
 			</div>

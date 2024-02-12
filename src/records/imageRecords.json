@@ -1,17 +1,69 @@
 [
-	{ "id": 1, "icon": "Web", "picture": "skills/Wondershare.png" },
-	{ "id": 2, "icon": "Web2", "picture": "sample2" },
-	{ "id": 3, "icon": "Web3", "picture": "sample3" },
-	{ "id": 4, "icon": "Web2", "picture": "sample4" },
-	{ "id": 5, "icon": "Web2", "picture": "sample5" },
-	{ "id": 6, "icon": "Web2", "picture": "sample6" },
-	{ "id": 7, "icon": "Web2", "picture": "sample7" },
-	{ "id": 8, "icon": "Web2", "picture": "sample8" },
-	{ "id": 9, "icon": "Web2", "picture": "sample9" },
-	{ "id": 10, "icon": "Web2", "picture": "sample0" },
-	{ "id": 11, "icon": "Web2", "picture": "sample12" },
-	{ "id": 12, "icon": "Web2", "picture": "sample122" },
-	{ "id": 13, "icon": "Web2", "picture": "sample111" },
+	{
+		"id": 1,
+		"icon": "digitalArt/icon/icon2.png",
+		"picture": "digitalArt/picture/Girlboy2.png"
+	},
+	{
+		"id": 2,
+		"icon": "digitalArt/icon/icon4.png",
+		"picture": "digitalArt/picture/Girlboy3.png"
+	},
+	{
+		"id": 3,
+		"icon": "digitalArt/icon/icon3.png",
+		"picture": "digitalArt/picture/Girlboy4.png"
+	},
+	{
+		"id": 4,
+		"icon": "digitalArt/icon/icon1.png",
+		"picture": "digitalArt/picture/Girlboy.png"
+	},
+	{
+		"id": 5,
+		"icon": "digitalArt/icon/icon5.png",
+		"picture": "digitalArt/picture/image5.png"
+	},
+	{
+		"id": 6,
+		"icon": "digitalArt/icon/icon6.png",
+		"picture": "digitalArt/picture/image6.png"
+	},
+	{
+		"id": 7,
+		"icon": "digitalArt/icon/icon7.png",
+		"picture": "digitalArt/picture/image7.png"
+	},
+	{
+		"id": 8,
+		"icon": "digitalArt/icon/icon8.png",
+		"picture": "digitalArt/picture/image8.png"
+	},
+	{
+		"id": 9,
+		"icon": "digitalArt/icon/icon9.png",
+		"picture": "digitalArt/picture/image9.png"
+	},
+	{
+		"id": 10,
+		"icon": "digitalArt/icon/icon10.png",
+		"picture": "digitalArt/picture/image10.png"
+	},
+	{
+		"id": 11,
+		"icon": "digitalArt/icon/icon11.png",
+		"picture": "digitalArt/picture/image11.png"
+	},
+	{
+		"id": 12,
+		"icon": "digitalArt/icon/icon12.png",
+		"picture": "digitalArt/picture/image12.png"
+	},
+	{
+		"id": 13,
+		"icon": "digitalArt/icon/icon13.png",
+		"picture": "digitalArt/picture/image13.png"
+	},
 	{ "id": 14, "icon": "Web2", "picture": "sample221" },
 	{ "id": 15, "icon": "Web2", "picture": "sample221" },
 	{ "id": 16, "icon": "Web2", "picture": "sample221" },

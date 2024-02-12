@@ -4,6 +4,8 @@ import { skillItems } from "../records/records"
 import DigitalArt from "./portfolio/DigitalArt"
 import Button from "../components/Button"
 import WebDeveloping from "./portfolio/WebDeveloping"
+import VideoEditing from "./portfolio/VideoEditing"
+import WebDesign from "./portfolio/WebDesign"
 
 export default function Skills() {
 	const [showSkillsList, setShowSkillsList] = useState(false)
@@ -73,9 +75,8 @@ export default function Skills() {
 				) : undefined}
 				{selectedSkill === "Digital Art" ? <DigitalArt /> : undefined}
 				{selectedSkill === "Web Developing" ? <WebDeveloping /> : undefined}
-				{selectedSkill === "Video Editing" ? <DigitalArt /> : undefined}
-				{selectedSkill === "Web Design" ? <DigitalArt /> : undefined}
-				{selectedSkill === "Digital Art" ? <DigitalArt /> : undefined}
+				{selectedSkill === "Video Editing" ? <VideoEditing /> : undefined}
+				{selectedSkill === "Web Design" ? <WebDesign /> : undefined}
 				{selectedSkill === "Social Media Manager" ? (
 					<DigitalArt />
 				) : undefined}

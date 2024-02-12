@@ -32,7 +32,7 @@ function DigitalArt() {
 					</p>
 					<div className="relative mt-6 flex flex-col justify-center">
 						<div className="flex justify-center border-[7px] border-solid rounded-lg  border-custom-primary">
-							<div className="grid grid-flow-col grid-rows-2 gap-[10px] overflowscroll p-[5px]">
+							<div className="grid grid-flow-col grid-rows-2 gap-[5px] overflowscroll p-[5px]">
 								{Images.map(({ id, icon, picture }) => {
 									return (
 										<DigitalSlide
@@ -47,10 +47,10 @@ function DigitalArt() {
 						</div>
 						<div className="flex justify-between my-[20px] gap-3">
 							<div className="h-[700px] w-[40%] bg-custom-background border-[7px] border-solid border-custom-primary rounded-lg flex justify-center place-items-center ">
-								<div className="content">
+								<div className="content h-[auto] flex place-content-center">
 									{showImage && (
 										<img
-											className="videoImage showImage"
+											className="showImage h-[auto] max-h-[680px] "
 											src={image}
 											alt="Selected Digital Art"
 										/>
