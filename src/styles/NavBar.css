@@ -1,36 +1,36 @@
 .transitionObject {
-	transition: 0.3s ease-in-out;
-	left: 10rem;
-	padding: 10px 20px;
-	/* background-color: antiquewhite; */
-	color: rgb(98, 58, 56); /* Text color */
-	text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
-		1px 1px 0 #ffffff;
-	letter-spacing: 1px;
+   transition: 0.3s ease-in-out;
+   left: 10rem;
+   padding: 10px 20px;
+   /* background-color: antiquewhite; */
+   color: rgb(98, 58, 56); /* Text color */
+   text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+      1px 1px 0 #ffffff;
+   letter-spacing: 1px;
 }
 
 .imageHover {
-	content: "";
-	width: auto;
-	height: 40vh;
-	background-size: cover;
-	position: fixed;
-	top: 70%;
-	left: -10%;
-	transform: scale(0);
-	transition: 0.5s ease-in-out;
+   content: "";
+   width: auto;
+   height: 40vh;
+   background-size: cover;
+   position: fixed;
+   top: 70%;
+   left: -10%;
+   transform: scale(0);
+   transition: 0.5s ease-in-out;
 }
 
 .transitionObject:hover + .imageHover {
-	transform: scale(1);
-	top: 55%;
-	left: 0%;
+   transform: scale(1);
+   top: 55%;
+   left: 0%;
 }
 
 .transitionObject:hover {
-	color: rgb(162, 226, 225);
-	text-shadow: -2px -2px 0 rgb(98, 58, 56), 2px -2px 0 rgb(98, 58, 56),
-		-2px 2px 0 rgb(98, 58, 56), 2px 2px 0 rgb(98, 58, 56);
+   color: rgb(162, 226, 225);
+   text-shadow: -2px -2px 0 rgb(98, 58, 56), 2px -2px 0 rgb(98, 58, 56),
+      -2px 2px 0 rgb(98, 58, 56), 2px 2px 0 rgb(98, 58, 56);
 }
 
 /* .image {
@@ -44,110 +44,125 @@
 } */
 
 .sample {
-	color: blue;
+   color: blue;
 }
 .fx {
-	display: flex;
+   display: flex;
 }
 
 @keyframes opacityTransition {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
 }
 
 .navbarlist {
-	transition: 0.2s;
-	padding: 0px 5px;
-	margin: 0px 5px;
-	background-color: rgb(0 128 128 / var(--tw-text-opacity));
-	color: #ffffff;
+   transition: 0.2s;
+   padding: 0px 5px;
+   margin: 0px 5px;
+   background-color: rgb(0 128 128 / var(--tw-text-opacity));
+   color: #ffffff;
 }
 
 .navbarlist-active {
-	transition: 0.2s;
-	padding: 0px 5px;
-	margin: 0px 5px;
-	color: rgb(0 128 128 / var(--tw-text-opacity));
-	background-color: #ffffff;
-	border-radius: 7px;
+   transition: 0.2s;
+   padding: 0px 5px;
+   margin: 0px 5px;
+   color: rgb(0 128 128 / var(--tw-text-opacity));
+   background-color: #ffffff;
+   border-radius: 7px;
 }
 
 .navbarlist:hover {
-	color: rgb(0, 128, 128);
+   color: rgb(0, 128, 128);
 }
 
 .navbarlist::before {
-	content: "";
-	width: 0%;
-	height: 100%;
-	position: absolute;
-	z-index: -2;
-	opacity: 0;
-	border-radius: 7px;
-	left: 0;
-	top: 50%;
-	transition: 0.2s ease-out;
-	transform: scale(0);
-	padding: 5px 10px;
+   content: "";
+   width: 0%;
+   height: 100%;
+   position: absolute;
+   z-index: -2;
+   opacity: 0;
+   border-radius: 7px;
+   left: 0;
+   top: 50%;
+   transition: 0.2s ease-out;
+   transform: scale(0);
+   padding: 5px 10px;
 }
 
 .navbarlist:hover::before {
-	content: "";
-	height: 100%;
-	width: 100%;
-	background-color: #ffffff;
-	opacity: 1;
-	top: 0%;
-	transform: scale(1);
+   content: "";
+   height: 100%;
+   width: 100%;
+   background-color: #ffffff;
+   opacity: 1;
+   top: 0%;
+   transform: scale(1);
 }
 
 .navbarlink {
-	padding: 5px 15px;
+   padding: 5px 10px;
 }
 
 .active {
-	background-color: white;
-	color: black;
-	border-radius: 7px;
+   background-color: white;
+   color: rgb(0, 128, 128);
+   border-radius: 7px;
 }
 
 .navbarbackground {
-	z-index: 100;
+   z-index: 100;
 }
 
 .content {
-	animation: slide-in-from-left 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+   animation: slide-in-from-left 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+.contentExit {
+   animation: slide-out-from-left 1s ease forwards;
 }
 
 .showImage {
-	animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
+   animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
 }
 
 @keyframes pop-in {
-	0% {
-		transform: scale(0);
-		opacity: 0;
-	}
-	80% {
-		transform: scale(1.1);
-		opacity: 1;
-	}
-	100% {
-		transform: scale(1);
-	}
+   0% {
+      transform: scale(0);
+      opacity: 0;
+   }
+   80% {
+      transform: scale(1.1);
+      opacity: 1;
+   }
+   100% {
+      transform: scale(1);
+   }
 }
 
 @keyframes slide-in-from-left {
-	0% {
-		opacity: 0;
-		transform: translateX(-30%);
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+   0% {
+      opacity: 0;
+      transform: translateX(-30%);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes slide-out-from-left {
+   0% {
+      opacity: 1;
+      transform: scale(1);
+   }
+   100% {
+      opacity: 0;
+      transform: scale(0);
+   }
 }

@@ -1,51 +1,48 @@
-import React from "react"
-import "../styles/Experience.css"
-import { experiences } from "../records/records"
+import React from "react";
+import "../styles/Experience.css";
+import { EXPERIENCELIST } from "../records/records";
+import ExperienceList from "../components/ExperienceList";
 
 const Experience = () => {
-	return (
-		<div
-			name="experience"
-			className="flex h-screen w-full to-white bg-gradient-to-b  from-custom-background content "
-		>
-			<div className="max-w-screen-lg mx-auto flex-col justify-center  w-full h-full relative mt-[100px]">
-				<p className="font-primary text-4xl text-custom-third inline font-bold border-b-4 border-gray-500 p-2 ">
-					Work Experience
-				</p>
-				<p className="py-6">these are the tehc we</p>
-				<div className="w-full  text-center py-8 px-12 sm:px-0 table">
-					<ul>
-						{experiences.map(({ id, src, title, style, rate, color }) => (
-							<li
-								key={id}
-								className={`column-table hover:shadow-md duration-700 rounded-lg ${style}`}
-							>
-								<div className="table-left">
-									<div
-										className={` flex-col hover:scale-105 duration-500 py-2 rounded-lg icon  `}
-									>
-										<img src={src} alt="" className="w-12 mx-auto" />
-									</div>
-								</div>
-								<div className="column-text">
-									<p className="">{title}</p>
-								</div>
-								<div className="bar flex">
-									<div
-										className="percent"
-										style={{ width: rate, background: color }}
-									>
-										<div className="color-percent">..</div>
-									</div>
-									<div className="pl-2">{rate}</div>
-								</div>
-							</li>
-						))}
-					</ul>
-				</div>
-			</div>
-		</div>
-	)
-}
+   return (
+      <div
+         name="experience"
+         className="flex h-screen w-full to-white bg-gradient-to-b  from-custom-background content "
+      >
+         <div className="max-w-screen-lg mx-auto flex-col justify-center place-items-center  w-full h-full relative mt-[100px]">
+            <p className="font-primary text-[70px] flex justify-center text-custom-secondary  font-bold self-center p-2 ">
+               WORK EXPERIENCE
+            </p>
+            <div className="relative flex mt-[20px] flex-col">
+               {EXPERIENCELIST.map(
+                  ({
+                     id,
+                     year,
+                     employer,
+                     job,
+                     role1,
+                     role2,
+                     role3,
+                     role4,
+                     role5,
+                  }) => (
+                     <ExperienceList
+                        key={id}
+                        year={year}
+                        employer={employer}
+                        job={job}
+                        role1={role1}
+                        role2={role2}
+                        role3={role3}
+                        role4={role4}
+                        role5={role5}
+                     />
+                  )
+               )}
+            </div>
+         </div>
+      </div>
+   );
+};
 
-export default Experience
+export default Experience;

@@ -1,11 +1,12 @@
 import Image from "../assets/images/logo2.png"
 import "../styles/NavBar.css"
+import React from "react"
 
 export default function Header({ children }) {
 	return (
-		<div className=" flex justify-between items-center w-full h-16 text-black fixed bg-custom-secondary px-4 navbarbackground">
+		<div  className=" flex justify-between items-center w-full h-[6vh] min-h-[64px] text-black fixed bg-custom-secondary px-4 navbarbackground">
 			<div className="">
-				<button className="transitionObject font-primary text-3xl text-outline">
+				<button style={{ fontSize: "clamp(30px, 2.5vw, 40px)" }} className="transitionObject font-primary  text-outline">
 					DARYL LOUIE
 				</button>
 

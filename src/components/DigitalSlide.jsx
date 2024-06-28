@@ -12,7 +12,7 @@ function DigitalSlide({ name, onSelect, isSelected }) {
 					}  rounded-[5px]  `}
 				>
 					<img
-						className="showImage h-[auto] max-h-[680px] "
+						className="showImage h-[auto] max-h-[80px] "
 						src={name}
 						alt="Selected Digital Art"
 					/>

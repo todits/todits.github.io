@@ -1,1 +1,36 @@
+.textshadow {
+   text-shadow: 5px 5px 0 #bee7e7;
+}
 
+/* .socialIconPair:hover .socialIcon {
+			transform: scale(1);
+		display: flex;
+	}
+.socialIcon {
+	transform: scale(0);
+	display: none;
+} */
+
+.socialIcon {
+   transform: scale(0);
+   opacity: 0;
+   /* transition: transform 0.3s, opacity 0.3s; */
+
+   position: relative;
+   transition-duration: 300ms;
+   margin-left: -80px;
+   width: 80px;
+}
+
+.socialIconPair:hover .socialIcon {
+   transform: scale(1);
+   opacity: 1;
+   margin-left: 0px;
+   left: 0px;
+}
+
+.socialIconPair {
+   position: relative;
+   width: auto;
+   /* min-width: 110px; */
+}

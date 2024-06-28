@@ -1,54 +1,48 @@
-import Home from "./pages/Home"
-import SocialLinks from "./pages/SocialLinks"
-import About from "./pages/About"
-import Portfolio from "./pages/Portfolio"
-import Experience from "./pages/Experience"
-import Contact from "./pages/Contact"
-import ArtGallery from "./pages/ArtGallery"
-import Skills from "./pages/Skills"
-import "./global.css"
-import WebDesign from "./pages/portfolio/WebDesign"
-import WebDeveloping from "./pages/portfolio/WebDeveloping"
-import PhotoEditing from "./pages/portfolio/PhotoEditing"
-import EmailMarketing from "./pages/portfolio/EmailMarketing"
-import VideoEditing from "./pages/portfolio/VideoEditing"
-import SocialMediaManager from "./pages/portfolio/SocialMediaManager"
-import DigitalArt from "./pages/portfolio/DigitalArt"
-import navBarList from "./records/navBar.json"
-import Header from "./pages/Header"
-import NewNavbar from "./components/NewNavbar"
-import { useState } from "react"
+import Home from "./pages/Home";
+
+import About from "./pages/About";
+
+import Experience from "./pages/Experience";
+import Contact from "./pages/Contact";
+import Skills from "./pages/Skills";
+import "./global.css";
+import React from "react";
+
+import Header from "./pages/Header";
+import NewNavbar from "./components/NewNavbar";
+import { useState } from "react";
+import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 
 function App() {
-	const [selectedNavBar, setSelectedNavBar] = useState("home")
+   const [selectedNavBar, setSelectedNavBar] = useState("home");
 
-	const handleClickNavbar = (selectedtab) => {
-		setSelectedNavBar(selectedtab)
-	}
+   const handleClickNavbar = (selectedtab) => {
+      setSelectedNavBar(selectedtab);
+   };
 
-	return (
-		<div>
-			<Header>
-				{navBarList.map(({ link, id }) => (
-					<NewNavbar
-						key={id}
-						onSelectNav={() => handleClickNavbar(link)}
-						name={link}
-						isSelected={selectedNavBar === link}
-					/>
-				))}
-			</Header>
-			<SocialLinks />
-			<div className="relative">
-				{selectedNavBar === "home" ? <Home /> : undefined}
-				{selectedNavBar === "about" ? <About /> : undefined}
-				{selectedNavBar === "skills" ? <Skills /> : undefined}
-				{selectedNavBar === "skills" ? <Portfolio></Portfolio> : undefined}
-				{selectedNavBar === "experience" ? <Experience /> : undefined}
-				{selectedNavBar === "contact" ? <Contact /> : undefined}
-			</div>
-		</div>
-	)
+   return (
+      <div className="to-white bg-gradient-to-b  from-custom-background ">
+         <BrowserRouter>
+            <Header>
+               <NewNavbar name="Home" to="/" isSelected={selectedNavBar} />
+               <NewNavbar name="About" to="about" />
+               <NewNavbar name="Skills" to="skills" />
+               <NewNavbar name="Experience" to="experience" />
+               <NewNavbar name="Contact" to="contact" />
+            </Header>
+            <Routes>
+               <Route path="/" element={<Home />} />
+               <Route path="/about" element={<About />} />
+               <Route path="/skills" element={<Skills />}>
+                  {/* <Route path="webDeveloping" element={<WebDeveloping />} />
+                  <Route path="videoEditing" element={<WebDesign />} /> */}
+               </Route>
+               <Route path="/experience" element={<Experience />} />
+               <Route path="/contact" element={<Contact />} />
+            </Routes>
+         </BrowserRouter>
+      </div>
+   );
 }
 
-export default App
+export default App;

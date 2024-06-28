@@ -1,21 +1,21 @@
 .slideimage {
-	height: 30px;
-	min-height: 150px;
-	position: relative;
-	transition: transform 0.4s;
-	object-fit: contain;
+   height: 30px;
+   min-height: 150px;
+   position: relative;
+   transition: transform 0.4s;
+   object-fit: contain;
 }
 
 .slideimage:hover {
-	/* transform: translateZ(20px); */
-	transform: translateZ(20px) scale(1.3);
-	z-index: 100;
+   /* transform: translateZ(20px); */
+   transform: translateZ(20px) scale(1.3);
+   z-index: 100;
 }
 
 .slidegroup {
-	display: flex;
-	height: calc(250px * 10);
-	animation: scroll 15s linear infinite;
+   display: flex;
+   height: calc(250px * 10);
+   animation: scroll 15s linear infinite;
 }
 
 /* .slidegroup:hover {
@@ -23,68 +23,68 @@
 } */
 
 @keyframes scroll {
-	0% {
-		transform: translateY(0);
-	}
-	100% {
-		transform: translateY(calc(-215px * 5));
-	}
+   0% {
+      transform: translateY(0);
+   }
+   100% {
+      transform: translateY(calc(-215px * 5));
+   }
 }
 .slidecontainer {
-	height: 80vh;
-	position: absolute;
-	display: grid;
-	place-items: center;
-	overflow-y: hidden;
-	width: auto;
-	/* min-width: 200px; */
-	min-height: 800px;
-	overflow-x: hidden;
+   height: 80vh;
+   position: absolute;
+   display: grid;
+   place-items: center;
+   overflow-y: hidden;
+   width: auto;
+   /* min-width: 200px; */
+   min-height: 800px;
+   overflow-x: hidden;
 }
 
 .slidetext {
-	transform: scale(0);
-	width: auto;
-	height: auto;
-	transition: 0.5s;
-	margin-left: -80px;
+   transform: scale(0);
+   width: auto;
+   height: auto;
+   transition: 0.5s;
+   margin-left: -80px;
 }
 
 .skillbar {
-	transition: 0.3s ease-in-out;
-	width: 0px;
+   transition: 0.3s ease-in-out;
+   width: 0px;
 }
 
 .slideimage:hover + .hoverbar {
-	.slidetext {
-		transform: scale(1);
-		transition: 0.5s;
-		margin-left: 33px;
-	}
-	.skillbar {
-		transition: 0.3s ease-in-out;
-		width: 300px;
-	}
-	.skillbar .skillpercent {
-		color: #000000;
-		transition: 0.5s ease-in-out;
-		padding-right: 15px;
-	}
+   .slidetext {
+      transform: scale(1);
+      transition: 0.5s;
+      margin-left: 33px;
+   }
+   .skillbar {
+      transition: 0.3s ease-in-out;
+      width: 300px;
+   }
+   .skillbar .skillpercent {
+      color: #000000;
+      transition: 0.5s ease-in-out;
+      padding-right: 15px;
+   }
 }
 
 .skillpercent {
-	border-radius: 20px 0px 0px 20px;
-	margin: 0px 0 -1px -1px;
-	color: #00000000;
+   border-radius: 20px 0px 0px 20px;
+   margin: 0px 0 -1px -1px;
+   color: #00000000;
 }
 
 .phone::-webkit-scrollbar {
-	display: none;
+   display: none;
 }
 
 .phone {
-	-ms-overflow-style: none;
-	scrollbar-width: none;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
 }
 
 /* .overflowscroll::-webkit-scrollbar {
@@ -92,26 +92,26 @@
 } */
 
 .overflowscroll::-webkit-scrollbar-track {
-	background: hsl(120, -50%, 75% / 1);
+   background: hsl(120, -50%, 75% / 1);
 }
 
 .overflowscroll {
-	overflow-x: auto;
+   overflow-x: auto;
 }
 
 .overflowscroll::-webkit-scrollbar {
-	height: 10px;
+   height: 10px;
 }
 
 .overflowscroll::-webkit-scrollbar-thumb {
-	background-color: #3498db;
-	border-radius: 6px;
+   background-color: #3498db;
+   border-radius: 6px;
 }
 
 .overflowscroll::-webkit-scrollbar-track {
-	background-color: #f1f1f1;
+   background-color: #f1f1f1;
 }
 
 .overflowscroll::-webkit-scrollbar-thumb:hover {
-	background-color: #1e6091;
+   background-color: #1e6091;
 }
