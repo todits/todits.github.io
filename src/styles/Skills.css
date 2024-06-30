@@ -1,5 +1,5 @@
 .skilltext {
-   height: 20vh;
+   height: 115px;
    max-height: 150px;
    width: 100%;
    display: flex;
@@ -8,16 +8,13 @@
    transition: 0.3s ease-in-out;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1536px) {
    .skilltext {
-      height: 115px;
+      height: 20vh;
    }
    .skillImage {
-      height: 150px !important;
-      min-height: 150px !important;
-   }
-   .skilltext:hover + .skillImages {
-      transform: translate(-50%, -10%) scale(1) !important;
+      height: 180px;
+      min-height: 180px;
    }
 }
 
@@ -28,7 +25,7 @@
 }
 
 .skilltext:hover + .skillImages {
-   transform: translate(-50%, -50%) scale(1);
+   transform: translate(-50%, -10%) scale(1);
 }
 
 .skillImages {
@@ -50,9 +47,10 @@
 }
 
 .skillImage {
-   height: 180px;
    width: max-content;
-   min-height: 180px;
+
+   height: 150px;
+   min-height: 150px;
 }
 
 .skillImages1 {

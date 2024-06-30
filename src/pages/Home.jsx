@@ -1,13 +1,13 @@
-import React from "react"
-import Profile from "../assets/profile.png"
-import { MdOutlineKeyboardArrowRight } from "react-icons/md"
-import { Link } from "react-scroll"
-import SocialLinks from "./SocialLinks"
-import "../styles/Home.css"
-import facebook from "../assets/socialIcons/fb.png"
-import mail from "../assets/socialIcons/mail.png"
-import resume from "../assets/socialIcons/resume.png"
-import linkedIn from "../assets/socialIcons/linkedIn.png"
+import React from "react";
+import Profile from "../assets/profile.png";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-scroll";
+import SocialLinks from "./SocialLinks";
+import "../styles/Home.css";
+import facebook from "../assets/socialIcons/fb.png";
+import mail from "../assets/socialIcons/mail.png";
+import resume from "../assets/socialIcons/resume.png";
+import linkedIn from "../assets/socialIcons/linkedIn.png";
 
 const socials = [
    {
@@ -31,7 +31,7 @@ const socials = [
       download: true,
       href: "/CV and Portfolio.pdf",
    },
-]
+];
 
 const Home = () => {
    return (
@@ -46,7 +46,7 @@ const Home = () => {
 					</h1> */}
                <h2
                   style={{ fontSize: "clamp(60px, 5vw, 100px)" }}
-                  className="text-sm  sm:text-7xl sm:pt-[20px] font-primary text-custom-secondary textshadow"
+                  className="text-7xl pt-[20px] 2xl:py-[50px] font-primary text-custom-secondary textshadow"
                >
                   PERSONAL PORTFOLIO
                </h2>
@@ -54,8 +54,8 @@ const Home = () => {
             <div className="w-[100%] h-[100%] flex justify-between flex-col ">
                <div className="bg-[#bee7e7] ">
                   <div className="flex max-w-screen-lg mx-auto my-[20px] h-[auto]">
-                     <div className="flex flex-col justify-center w-[60%] shadow-md  rounded-lg shadow-custom-secondary p-[20px] bg-white my-[5%] sm:my-[20px]">
-                        <h2 className="text-4xl  sm:text-[45px] font-primary text-custom-third">
+                     <div className="flex flex-col justify-center w-[60%] shadow-md  rounded-lg shadow-custom-secondary p-[20px] bg-white 2xl:my-[5%] my-[20px]">
+                        <h2 className="2xl:text-7xl  text-[45px]  font-primary text-custom-third">
                            DARYL LOUIE ONLAYAO
                         </h2>
                         <p className="text-gray-500 py-4">
@@ -70,7 +70,7 @@ const Home = () => {
                            commitment to excellence and my drive to exceed
                            expectations.
                         </p>
-                        <p className="text-gray-500 pb-4 pr-[20px] sm:hidden">
+                        <p className="text-gray-500 pb-4 pr-[20px] 2xl:contents hidden">
                            Thank you for joining me on this journey, and I hope
                            you find inspiration and excitement within these
                            pages.
@@ -102,14 +102,14 @@ const Home = () => {
                      <img
                         src={Profile}
                         alt="my profile"
-                        className="rounded-2xl mx-auto  w-[60vh] min absolute bottom-[-20%] right-[15%] sm:right-[30px] min-w-[450px]"
+                        className="rounded-2xl mx-auto  w-[60vh] min absolute bottom-[-20%] 2xl:right-[15%] right-[30px] min-w-[450px]"
                      />
                   </div>
                </div>
             </div>
          </div>
       </div>
-   )
-}
+   );
+};
 
-export default Home
+export default Home;
