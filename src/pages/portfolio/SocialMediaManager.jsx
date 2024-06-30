@@ -1,5 +1,5 @@
-import React from "react";
-import Footer from "../../components/Footer";
+import React from "react"
+import Footer from "../../components/Footer"
 
 export default function SocialMediaManager() {
    return (
@@ -22,7 +22,7 @@ export default function SocialMediaManager() {
                            <img
                               src="/socialmedia/Laptop.png"
                               alt=""
-                              className="w-[50vw]"
+                              className="w-[1010px]"
                            />
                         </div>
 
@@ -74,5 +74,5 @@ export default function SocialMediaManager() {
             <Footer />
          </div>
       </div>
-   );
+   )
 }

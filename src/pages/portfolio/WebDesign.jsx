@@ -1,14 +1,14 @@
-import React from "react";
-import "../../styles/Skills.css";
-import { webDesignIcons, videoThumbnails } from "../../records/records";
-import VideoSlide from "../../components/VideoSlide";
-import Portfolio from "../Portfolio";
-import wordpress from "../../assets/skillIcons/Wordpress.png";
-import webImage1 from "../../assets/images/skills/webDesign/Portfolio Website.png";
-import webImage2 from "../../assets/images/skills/webDesign/Portfolio Website 2.png";
-import webImage3 from "../../assets/images/skills/webDesign/Portfolio Website 3.png";
+import React from "react"
+import "../../styles/Skills.css"
+import { webDesignIcons, videoThumbnails } from "../../records/records"
+import VideoSlide from "../../components/VideoSlide"
+import Portfolio from "../Portfolio"
+import wordpress from "../../assets/skillIcons/Wordpress.png"
+import webImage1 from "../../assets/images/skills/webDesign/Portfolio Website.png"
+import webImage2 from "../../assets/images/skills/webDesign/Portfolio Website 2.png"
+import webImage3 from "../../assets/images/skills/webDesign/Portfolio Website 3.png"
 
-import WebDesignExperience from "../../components/WebDesignExperience";
+import WebDesignExperience from "../../components/WebDesignExperience"
 
 const experiences = [
    {
@@ -34,12 +34,12 @@ const experiences = [
       text: `I have hands-on experience developing a landing page for my client's virtual training, which prompted me to extend my expertise in web design across various platforms, including Wix.`,
       link: "https://www.ladesignboutique.com/",
    },
-];
+]
 
 export default function WebDesign() {
    return (
       <div name="webDesign" className="flex w-full  flex-col">
-         <div className="self-center font-primary text-[80px] text-custom-secondary">
+         <div className="self-center font-primary text-[80px] sm:text-[60px] text-custom-secondary textshadow">
             WEB DESIGN SKILLS
          </div>
          <div className="flex justify-center relative mt-6">
@@ -58,7 +58,7 @@ export default function WebDesign() {
                .
             </div>
          </div>
-         <div className="self-center max-w-screen-lg p-9 mt-16 text-xl shadow-lg shadow-custom-primary">
+         <div className="self-center max-w-screen-lg p-9 mt-16 text-xl shadow-lg sm:mt-10 shadow-custom-primary">
             I've acquired valuable experience in elevating my current client's
             website. I practically rebranded the site, crafting a fresh version
             with additional features and functions to better cater to her
@@ -79,5 +79,5 @@ export default function WebDesign() {
             ))}
          </div>
       </div>
-   );
+   )
 }
