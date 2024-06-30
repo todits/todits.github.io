@@ -22,7 +22,7 @@ export default function SkillItem({
    };
 
    return (
-      <NavLink>
+      <div>
          {skill ? (
             <button
                onClick={selectedButton}
@@ -52,6 +52,6 @@ export default function SkillItem({
                {image6 && <img className="skillImage" src={image6} alt="" />}
             </div>
          )}
-      </NavLink>
+      </div>
    );
 }

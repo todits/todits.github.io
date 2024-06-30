@@ -1,20 +1,23 @@
-import Image from "../assets/images/logo2.png"
-import "../styles/NavBar.css"
-import React from "react"
+import Image from "../assets/images/logo2.png";
+import "../styles/NavBar.css";
+import React from "react";
 
 export default function Header({ children }) {
-	return (
-		<div  className=" flex justify-between items-center w-full h-[6vh] min-h-[64px] text-black fixed bg-custom-secondary px-4 navbarbackground">
-			<div className="">
-				<button style={{ fontSize: "clamp(30px, 2.5vw, 40px)" }} className="transitionObject font-primary  text-outline">
-					DARYL LOUIE
-				</button>
+   return (
+      <div className=" flex justify-between items-center w-full h-[6vh] min-h-[64px] text-black fixed bg-custom-secondary px-4 navbarbackground">
+         <div className="">
+            <button
+               style={{ fontSize: "clamp(30px, 2.5vw, 40px)" }}
+               className="transitionObject font-primary  text-outline"
+            >
+               DARYL LOUIE
+            </button>
 
-				<img src={Image} alt="" className="imageHover" />
-			</div>
-			<ul className="hidden md:flex">{children}</ul>
-		</div>
-	)
+            <img src={Image} alt="" className="imageHover" />
+         </div>
+         <ul className="hidden md:flex">{children}</ul>
+      </div>
+   );
 }
 
 /* <div

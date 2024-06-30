@@ -82,7 +82,10 @@ const Home = () => {
                <div className=" py-[5px] w-full flex justify-center">
                   <div className="max-w-screen-lg flex gap-5 w-[50%] mb-5 pl-[4%]">
                      {socials.map(({ text, icon, href, download }) => (
-                        <div className="flex gap-1 socialIconPair cursor-pointer">
+                        <div
+                           className="flex gap-1 socialIconPair cursor-pointer"
+                           key={text}
+                        >
                            <img src={icon} alt="" className="w-[8vh]" />
                            <div className="socialIcon flex place-items-end">
                               <a
