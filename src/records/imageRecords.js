@@ -9,78 +9,114 @@ import icon8 from "../assets/images/skills/digitalArt/icon/icon8.png";
 import icon9 from "../assets/images/skills/digitalArt/icon/icon9.png";
 import icon10 from "../assets/images/skills/digitalArt/icon/icon10.png";
 import icon11 from "../assets/images/skills/digitalArt/icon/icon11.png";
+import icon13 from "../assets/images/skills/digitalArt/icon/icon13.png";
+import icon12 from "../assets/images/skills/digitalArt/icon/icon12.png";
+import icon14 from "../assets/images/skills/digitalArt/icon/icon14.png";
+import icon15 from "../assets/images/skills/digitalArt/icon/icon15.png";
+import icon16 from "../assets/images/skills/digitalArt/icon/icon16.png";
+import icon17 from "../assets/images/skills/digitalArt/icon/icon17.png";
+import girlboy2 from "../assets/images/skills/digitalArt/picture/Girlboy2.png";
+import girlboy3 from "../assets/images/skills/digitalArt/picture/Girlboy3.png";
+import girlboy4 from "../assets/images/skills/digitalArt/picture/Girlboy4.png";
+import girlboy from "../assets/images/skills/digitalArt/picture/Girlboy.png";
+import image5 from "../assets/images/skills/digitalArt/picture/image5.png";
+import image6 from "../assets/images/skills/digitalArt/picture/image6.png";
+import image7 from "../assets/images/skills/digitalArt/picture/image7.png";
+import image8 from "../assets/images/skills/digitalArt/picture/image8.png";
+import image9 from "../assets/images/skills/digitalArt/picture/image9.png";
+import image10 from "../assets/images/skills/digitalArt/picture/image10.png";
+import image11 from "../assets/images/skills/digitalArt/picture/image11.png";
+import image12 from "../assets/images/skills/digitalArt/picture/image12.png";
+import image13 from "../assets/images/skills/digitalArt/picture/image13.png";
+import image14 from "../assets/images/skills/digitalArt/picture/image14.png";
+import image15 from "../assets/images/skills/digitalArt/picture/image15.png";
+import image16 from "../assets/images/skills/digitalArt/picture/image16.png";
+import image17 from "../assets/images/skills/digitalArt/picture/image17.png";
 
 export const DIGITALIMAGES = [
    {
       id: 1,
       icon: icon2,
-      picture: "digitalArt/picture/Girlboy2.png",
+      picture: girlboy2,
    },
    {
       id: 2,
       icon: icon4,
-      picture: "digitalArt/picture/Girlboy3.png",
+      picture: girlboy3,
    },
    {
       id: 3,
       icon: icon3,
-      picture: "digitalArt/picture/Girlboy4.png",
+      picture: girlboy4,
    },
    {
       id: 4,
       icon: icon1,
-      picture: "digitalArt/picture/Girlboy.png",
+      picture: girlboy,
    },
    {
       id: 5,
       icon: icon5,
-      picture: "digitalArt/picture/image5.png",
+      picture: image5,
    },
    {
       id: 6,
       icon: icon6,
-      picture: "digitalArt/picture/image6.png",
+      picture: image6,
    },
    {
       id: 7,
       icon: icon7,
-      picture: "digitalArt/picture/image7.png",
+      picture: image7,
    },
    {
       id: 8,
       icon: icon8,
-      picture: "digitalArt/picture/image8.png",
+      picture: image8,
    },
    {
       id: 9,
       icon: icon9,
-      picture: "digitalArt/picture/image9.png",
+      picture: image9,
    },
    {
       id: 10,
       icon: icon10,
-      picture: "digitalArt/picture/image10.png",
+      picture: image10,
    },
    {
       id: 11,
       icon: icon11,
-      picture: "digitalArt/picture/image11.png",
+      picture: image11,
    },
    {
       id: 12,
-      icon: "digitalArt/icon/icon12.png",
-      picture: "digitalArt/picture/image12.png",
+      icon: icon12,
+      picture: image12,
    },
    {
       id: 13,
-      icon: "digitalArt/icon/icon13.png",
-      picture: "digitalArt/picture/image13.png",
+      icon: icon13,
+      picture: image13,
    },
-   { id: 14, icon: "Web2", picture: "sample221" },
-   { id: 15, icon: "Web2", picture: "sample221" },
-   { id: 16, icon: "Web2", picture: "sample221" },
-   { id: 17, icon: "Web2", picture: "sample221" },
-   { id: 18, icon: "Web2", picture: "sample221" },
-   { id: 19, icon: "Web2", picture: "sample221" },
-   { id: 20, icon: "Web2", picture: "sample" },
+   {
+      id: 14,
+      icon: icon14,
+      picture: image14,
+   },
+   {
+      id: 15,
+      icon: icon15,
+      picture: image15,
+   },
+   {
+      id: 16,
+      icon: icon16,
+      picture: image16,
+   },
+   {
+      id: 17,
+      icon: icon17,
+      picture: image17,
+   },
 ];

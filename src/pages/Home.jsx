@@ -55,26 +55,29 @@ const Home = () => {
                <div className="bg-[#bee7e7] ">
                   <div className="flex max-w-screen-lg mx-auto my-[20px] h-[auto]">
                      <div className="flex flex-col justify-center w-[60%] shadow-md  rounded-lg shadow-custom-secondary p-[20px] bg-white 2xl:my-[5%] my-[20px]">
-                        <h2 className="2xl:text-7xl  text-[45px]  font-primary text-custom-third">
+                        <h2 className=" text-[50px] self-center font-bold text-custom-third">
                            DARYL LOUIE ONLAYAO
                         </h2>
-                        <p className="text-gray-500 py-4">
-                           Hello and welcome! I'm thrilled to have you here.
-                        </p>
-                        <p className="text-gray-500 pb-4 pr-[20px]">
-                           In this portfolio, I'm excited to showcase my journey
-                           and the work that I've poured my heart into.
-                        </p>
-                        <p className="text-gray-500 pb-4 pr-[30px]">
-                           Each project you'll find here is a testament to my
-                           commitment to excellence and my drive to exceed
-                           expectations.
-                        </p>
-                        <p className="text-gray-500 pb-4 pr-[20px] 2xl:contents hidden">
-                           Thank you for joining me on this journey, and I hope
-                           you find inspiration and excitement within these
-                           pages.
-                        </p>
+                        <div className="px-[20px] text-gray-600  pb-9">
+                           <p className="  py-4">
+                              Hello and welcome! I'm thrilled to have you here.
+                           </p>
+                           <p className="pb-4 ">
+                              In this portfolio, I'm excited to showcase my
+                              journey and the work that I've poured my heart
+                              into.
+                           </p>
+                           <p className="pb-4 ">
+                              Each project you'll find here is a testament to my
+                              commitment to excellence and my drive to exceed
+                              expectations.
+                           </p>
+                           <p className=" 2xl:contents hidden">
+                              Thank you for joining me on this journey, and I
+                              hope you find inspiration and excitement within
+                              these pages.
+                           </p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -105,7 +108,7 @@ const Home = () => {
                      <img
                         src={Profile}
                         alt="my profile"
-                        className="rounded-2xl mx-auto  w-[60vh] min absolute bottom-[-20%] 2xl:right-[15%] right-[30px] min-w-[450px]"
+                        className="rounded-2xl mx-auto 2xl:max-w-none w-[60vh] min absolute bottom-[-20%] 2xl:-right-[10%] right-[30px] min-w-[450px]"
                      />
                   </div>
                </div>

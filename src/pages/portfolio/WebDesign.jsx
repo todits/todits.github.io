@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/Skills.css";
-import { webDesignIcons, videoThumbnails } from "../../records/records";
+import { webDesignIcons } from "../../records/records";
 import VideoSlide from "../../components/VideoSlide";
 import Portfolio from "../Portfolio";
 import wordpress from "../../assets/skillIcons/Wordpress.png";

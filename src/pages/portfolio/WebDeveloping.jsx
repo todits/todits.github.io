@@ -5,10 +5,7 @@ import { skills } from "../../records/records";
 
 function WebDeveloping() {
    return (
-      <div
-         name="webDeveloping"
-         className="flex h-screen skillsScreen w-full to-white bg-gradient-to-b  from-custom-background"
-      >
+      <div name="webDeveloping" className="flex skillsScreen w-full">
          <div className="max-w-screen-xl p-4 mx-auto flex flex-col place-content-start w-full h-full">
             <div className=" slidecontainer">
                <div className="slidegroup">
@@ -39,8 +36,8 @@ function WebDeveloping() {
             <div className="flex justify-between mt-8">
                <div className=" relative h-[80vh] min-h-[800px] "></div>
                <div className="flex justify-between flex-col w-[70%]">
-                  <div className="font-primary text-[50px]">
-                     Web Developing Skills
+                  <div className="font-primary text-custom-secondary text-[60px] textshadow">
+                     WEB DEVELOPING SKILLS
                   </div>
                   <div className="h-[80%] flex place-items-center text-xl">
                      While working as a teacher, I had the opportunity to be

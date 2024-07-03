@@ -10,7 +10,27 @@ import canva from "../assets/skillIcons/Canva.png";
 import capcut from "../assets/skillIcons/Capcut.png";
 import activeCampaign from "../assets/skillIcons/ActiveCampaign.png";
 import clickFunnels from "../assets/skillIcons/ClickFunnels.png";
+import laravel from "../assets/skillIcons/Laravel.png";
+import adobe from "../assets/skillIcons/Adobepro.png";
 import wix from "../assets/skillIcons/Wix.png";
+import powerdirector from "../assets/skillIcons/Powerdirector.png";
+import wondershare from "../assets/skillIcons/Wondershare.png";
+import instagram from "../assets/skillIcons/Instagram.png";
+import facebook from "../assets/skillIcons/Facebook.png";
+import linkedin from "../assets/skillIcons/Linkedin.png";
+import ai from "../assets/skillIcons/Ai.png";
+import ps from "../assets/skillIcons/Ps.png";
+import spreadsheet from "../assets/skillIcons/Spreadsheet.png";
+import word from "../assets/skillIcons/Word.png";
+import powerpoint from "../assets/skillIcons/Powerpoint.png";
+import publisher from "../assets/skillIcons/Publisher.png";
+import excel from "../assets/skillIcons/Excel.png";
+import gmail from "../assets/skillIcons/Gmail.png";
+import gcalendar from "../assets/skillIcons/GCalendar.png";
+import gdocs from "../assets/skillIcons/GDocs.png";
+import gdrive from "../assets/skillIcons/GDrive.png";
+import gmeet from "../assets/skillIcons/GMeet.png";
+import tiktok from "../assets/skillIcons/Tiktok.png";
 
 export const experiences = [
    {
@@ -75,7 +95,7 @@ export const videoEditingIcon = [
 
    {
       id: 2,
-      image: "skills/Powerdirector.png",
+      image: powerdirector,
       name: "Power Director",
       selectCircle: "circle2",
       rate: "80",
@@ -83,14 +103,14 @@ export const videoEditingIcon = [
 
    {
       id: 3,
-      image: "skills/Adobepro.png",
+      image: adobe,
       name: "Adobe Premier Pro",
       selectCircle: "circle3",
       rate: "75",
    },
    {
       id: 4,
-      image: "skills/Wondershare.png",
+      image: wondershare,
       name: "Filmora Wondershare",
       selectCircle: "circle4",
       rate: "83",
@@ -101,6 +121,23 @@ export const videoEditingIcon = [
       name: "Capcut",
       selectCircle: "circle5",
       rate: "86",
+   },
+];
+
+export const digitalArtIcon = [
+   {
+      id: 1,
+      image: ps,
+      name: "Adobe Photoshop",
+      selectCircle: "circle1",
+      rate: "85",
+   },
+   {
+      id: 2,
+      image: ai,
+      name: "Adobe Illustrator",
+      selectCircle: "circle1",
+      rate: "87",
    },
 ];
 
@@ -131,42 +168,42 @@ export const skills = [
    {
       id: 1,
       name: "CSS",
-      src: "skills/CSS.png",
+      src: css,
       color: "bg-blue-400",
       rate: "80%",
    },
    {
       id: 2,
       name: "Tailwind",
-      src: "skills/Tailwind.png",
+      src: tailwind,
       color: "bg-green-300",
       rate: "82%",
    },
    {
       id: 3,
       name: "HTML",
-      src: "skills/Html.png",
+      src: html,
       color: "bg-orange-400",
       rate: "85%",
    },
    {
       id: 4,
       name: "JAVA",
-      src: "skills/Java.png",
+      src: javascript,
       color: "bg-yellow-400",
       rate: "85%",
    },
    {
       id: 5,
       name: "React",
-      src: "skills/React.png",
+      src: reactImage,
       color: "bg-cyan-300",
       rate: "90%",
    },
    {
       id: 6,
       name: "Laravel",
-      src: "skills/Laravel.png",
+      src: laravel,
       color: "bg-red-400",
       rate: "80%",
    },
@@ -186,12 +223,12 @@ export const SKILL_ITEMS = [
    {
       id: 2,
       skillImages: "skillImages skillImages6 ",
-      image1: "skills/CSS.png",
-      image2: "skills/HTML.png",
-      image3: "skills/Java.png",
-      image4: "skills/React.png",
-      image5: "skills/Tailwind.png",
-      image6: "skills/Laravel.png",
+      image1: css,
+      image2: html,
+      image3: javascript,
+      image4: reactImage,
+      image5: tailwind,
+      image6: laravel,
       text: "Web Developing",
       skill: "webDeveloping",
    },
@@ -199,9 +236,9 @@ export const SKILL_ITEMS = [
    {
       id: 6,
       skillImages: "skillImages skillImages5 ",
-      image1: "skills/Adobepro.png",
-      image2: "skills/Powerdirector.png",
-      image3: "skills/Wondershare.png",
+      image1: adobe,
+      image2: powerdirector,
+      image3: wondershare,
       image4: canva,
       image5: capcut,
       text: "Video Editing",
@@ -209,60 +246,64 @@ export const SKILL_ITEMS = [
    },
    {
       id: 7,
-      skillImages: "skillImages skillImages3 ",
-      image1: "skills/Facebook.png",
-      image2: "skills/Instagram.png",
-      image3: "skills/Linkedin.png",
+      skillImages: "skillImages skillImages4 ",
+      image1: facebook,
+      image2: instagram,
+      image3: linkedin,
+      image4: tiktok,
       text: "Social Media Manager",
       skill: "socialMediaManager",
    },
    {
       id: 11,
       skillImages: "skillImages skillImages2 ",
-      image1: "skills/Ps.png",
-      image2: "skills/Ai.png",
+      image1: ps,
+      image2: ai,
       text: "Digital Art",
       skill: "digitalArt",
    },
    {
       id: 8,
       skillImages: "skillImages skillImages2 ",
-      image1: canva,
-      image2: canva,
+      image1: clickFunnels,
+      image2: activeCampaign,
       text: "Marketing Funnels",
    },
    {
       id: 9,
-      skillImages: "skillImages skillImages4 ",
-      image1: "skills/Spreadsheet.png",
-      image2: canva,
-      image3: canva,
-      image4: canva,
+      skillImages: "skillImages skillImages6 ",
+      image1: spreadsheet,
+      image2: gdocs,
+      image3: gcalendar,
+      image4: gdrive,
+      image5: gmeet,
+      image6: gmail,
+
       text: "Google Workspace",
    },
 
    {
       id: 5,
       skillImages: "skillImages skillImages4 ",
-      image1: "skills/Word.png",
-      image2: "skills/Powerpoint.png",
-      image3: "skills/Publisher.png",
-      image4: "skills/Excel.png",
+      image1: word,
+      image2: powerpoint,
+      image3: publisher,
+      image4: excel,
       text: "MS Office",
    },
    {
       id: 4,
       skillImages: "skillImages skillImages3",
-      image1: "skills/Gmail.png",
+      image1: gmail,
       image2: activeCampaign,
-      image4: "skills/ClickFunnels.png",
+      image4: clickFunnels,
       text: "Email Marketing",
    },
    {
       id: 3,
       skillImages: "skillImages skillImages3 ",
-      image1: "skills/Ps.png",
-      image2: "skills/Ai.png",
+      image1: ps,
+      image2: ai,
       image3: canva,
       text: "Photo Editing",
    },
@@ -296,6 +337,37 @@ export const webDesignIcons = [
       name: "Wix",
       selectCircle: "circle1",
       rate: "82",
+   },
+];
+
+export const socialMediaManagerIcons = [
+   {
+      id: 1,
+      image: facebook,
+      name: "Facebook",
+      selectCircle: "circle1",
+      rate: "88",
+   },
+   {
+      id: 2,
+      image: instagram,
+      name: "Instagram",
+      selectCircle: "circle1",
+      rate: "88",
+   },
+   {
+      id: 3,
+      image: linkedin,
+      name: "LinkedIn",
+      selectCircle: "circle1",
+      rate: "75",
+   },
+   {
+      id: 4,
+      image: tiktok,
+      name: "Tiktok",
+      selectCircle: "circle1",
+      rate: "85",
    },
 ];
 

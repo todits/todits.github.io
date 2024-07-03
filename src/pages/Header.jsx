@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Header({ children }) {
    return (
-      <div className=" flex justify-between items-center w-full h-[6vh] min-h-[64px] text-black fixed bg-custom-secondary px-4 navbarbackground">
+      <div className=" flex justify-between items-center w-full 2xl:h-[80px] h-[70px] text-black fixed bg-custom-secondary px-4 navbarbackground">
          <div className="">
             <button
                style={{ fontSize: "clamp(30px, 2.5vw, 40px)" }}

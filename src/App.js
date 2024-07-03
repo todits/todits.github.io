@@ -36,7 +36,7 @@ function App() {
                />
             ))}
          </Header>
-         <div className="relative">
+         <div className="relative to-white bg-gradient-to-b  from-custom-background  h-full">
             {selectedNavBar === "home" ? <Home /> : undefined}
             {selectedNavBar === "about" ? <About /> : undefined}
             {selectedNavBar === "skills" ? <Skills /> : undefined}

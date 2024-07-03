@@ -1,14 +1,11 @@
-import React from "react"
+import React from "react";
 
 const Contact = () => {
    return (
-      <div
-         name="contact"
-         className="p-4 text-white bg-gradient-to-b from-gray-800 to-black w-full h-screen"
-      >
+      <div name="contact" className="p-4 text-custom-secondary h-screen">
          <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
             <div className="pb-8">
-               <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+               <p className="text-4xl font-bold inline border-b-4 border-gray-700">
                   Contact
                </p>
                <p className="py-6">Submit the form below</p>
@@ -23,19 +20,19 @@ const Contact = () => {
                      type="text"
                      name="name"
                      placeholder="Enter your name"
-                     className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                     className="p-2 bg-transparent border-2 rounded-md text-custom-secondary focus:outline-none"
                   />
                   <input
                      type="text"
                      name="name"
                      placeholder="Enter your email"
-                     className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                     className="my-4 p-2 bg-transparent border-2 rounded-md text-custom-secondary focus:outline-none"
                   />
                   <textarea
                      name="message"
                      placeholder="Enter your message"
                      rows="10"
-                     className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                     className="p-2 bg-transparent border-2 rounded-md text-custom-secondary focus:outline-none"
                   ></textarea>
 
                   <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-100 duration-300">
@@ -45,7 +42,10 @@ const Contact = () => {
             </div>
          </div>
       </div>
-   )
-}
+   );
+};
 
-export default Contact
+export default Contact;
+
+// for background
+//  className="p-4 text-white bg-gradient-to-b from-gray-800 to-black w-full h-screen"

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import DigitalSlide from "../../components/DigitalSlide";
 import { DIGITALIMAGES } from "../../records/imageRecords";
 import VideoSlide from "../../components/VideoSlide";
+import { digitalArtIcon } from "../../records/records";
 
 function DigitalArt() {
    const [image, setImage] = useState("sample");
@@ -68,8 +69,17 @@ function DigitalArt() {
                      Digital art software background
                   </p>
                   <div className="flex justify-center gap-3">
-                     <VideoSlide image="skills/Ai.png " name="Power Director" />
-                     <VideoSlide image="skills/ps.png " name="Power Director" />
+                     {digitalArtIcon.map(
+                        ({ id, image, name, selectCircle, rate }) => (
+                           <VideoSlide
+                              image={image}
+                              name={name}
+                              rate={rate}
+                              key={id}
+                              selectCircle={selectCircle}
+                           />
+                        )
+                     )}
                   </div>
                </div>
             </div>
