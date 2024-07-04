@@ -31,6 +31,9 @@ import gdocs from "../assets/skillIcons/GDocs.png";
 import gdrive from "../assets/skillIcons/GDrive.png";
 import gmeet from "../assets/skillIcons/GMeet.png";
 import tiktok from "../assets/skillIcons/Tiktok.png";
+import videothumb1 from "../assets/images/skills/video/sample_video1.png";
+import videothumb2 from "../assets/images/skills/video/graduation.png";
+import videothumb3 from "../assets/images/skills/video/projectnido.png";
 
 export const experiences = [
    {
@@ -89,7 +92,7 @@ export const videoEditingIcon = [
       id: 1,
       image: canva,
       name: "Canva",
-      selectCircle: "circle1",
+      selectCircle: "circle85",
       rate: "85",
    },
 
@@ -97,7 +100,7 @@ export const videoEditingIcon = [
       id: 2,
       image: powerdirector,
       name: "Power Director",
-      selectCircle: "circle2",
+      selectCircle: "circle80",
       rate: "80",
    },
 
@@ -105,21 +108,21 @@ export const videoEditingIcon = [
       id: 3,
       image: adobe,
       name: "Adobe Premier Pro",
-      selectCircle: "circle3",
+      selectCircle: "circle75",
       rate: "75",
    },
    {
       id: 4,
       image: wondershare,
       name: "Filmora Wondershare",
-      selectCircle: "circle4",
+      selectCircle: "circle83",
       rate: "83",
    },
    {
       id: 5,
       image: capcut,
       name: "Capcut",
-      selectCircle: "circle5",
+      selectCircle: "circle85",
       rate: "86",
    },
 ];
@@ -129,14 +132,14 @@ export const digitalArtIcon = [
       id: 1,
       image: ps,
       name: "Adobe Photoshop",
-      selectCircle: "circle1",
+      selectCircle: "circle85",
       rate: "85",
    },
    {
       id: 2,
       image: ai,
       name: "Adobe Illustrator",
-      selectCircle: "circle1",
+      selectCircle: "circle85",
       rate: "87",
    },
 ];
@@ -146,21 +149,25 @@ export const videoThumbnails = [
       id: 1,
       source:
          "https://drive.google.com/file/d/1N1JIP0GqiUW2JpiC3C5wEjT3djgJphCM/preview",
-      image: "video/sample_video1.png",
-      title: "sample",
+      image: videothumb1,
+      title: "Video Lesson",
+      text: "check1",
    },
    {
       id: 2,
       source:
          "https://drive.google.com/file/d/1PPOAd0tWroNJjez1hdXFja_a2QPJh0p3/preview",
-      image: "video/sample_video1.png",
+      image: videothumb2,
       title: "Graduation Teaser",
+      text: "check3",
    },
    {
       id: 3,
-      source: "https://www.youtube.com/embed/IJ_14huTj6E?autoplay=1",
-      image: "video/sample_video1.png",
-      title: "sample3",
+      source:
+         "https://drive.google.com/file/d/1n2um39FJD2RVvmOoZeX8HdRJGyGu5ZT6/preview",
+      image: videothumb3,
+      title: "Nested Project Nido",
+      text: "check2",
    },
 ];
 
@@ -314,28 +321,28 @@ export const webDesignIcons = [
       id: 1,
       image: wordpress,
       name: "Wordpress",
-      selectCircle: "circle1",
+      selectCircle: "circle85",
       rate: "85",
    },
    {
       id: 2,
       image: divi,
       name: "Divi Themes",
-      selectCircle: "circle1",
+      selectCircle: "circle85",
       rate: "87",
    },
    {
       id: 3,
       image: clickFunnels,
       name: "Click Funnels",
-      selectCircle: "circle1",
+      selectCircle: "circle75",
       rate: "75",
    },
    {
       id: 4,
       image: wix,
       name: "Wix",
-      selectCircle: "circle1",
+      selectCircle: "circle83",
       rate: "82",
    },
 ];
@@ -345,28 +352,28 @@ export const socialMediaManagerIcons = [
       id: 1,
       image: facebook,
       name: "Facebook",
-      selectCircle: "circle1",
+      selectCircle: "circle85",
       rate: "88",
    },
    {
       id: 2,
       image: instagram,
       name: "Instagram",
-      selectCircle: "circle1",
+      selectCircle: "circle85",
       rate: "88",
    },
    {
       id: 3,
       image: linkedin,
       name: "LinkedIn",
-      selectCircle: "circle1",
+      selectCircle: "circle75",
       rate: "75",
    },
    {
       id: 4,
       image: tiktok,
       name: "Tiktok",
-      selectCircle: "circle1",
+      selectCircle: "circle85",
       rate: "85",
    },
 ];

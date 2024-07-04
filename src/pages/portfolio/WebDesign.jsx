@@ -31,7 +31,7 @@ const experiences = [
    {
       id: 3,
       image: webImage3,
-      text: `I have hands-on experience developing a landing page for my client's virtual training, which prompted me to extend my expertise in web design across various platforms, including Wix.`,
+      text: `As a Shopify Website Assistant, I added new products with accurate descriptions and images, created and updated blog posts to improve SEO and attract traffic, and maintained the website content for current promotions and inventory changes. `,
       link: "https://www.ladesignboutique.com/",
    },
 ];

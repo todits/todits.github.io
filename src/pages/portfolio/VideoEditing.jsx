@@ -16,14 +16,14 @@ export default function VideoEditing() {
             <div>
                <div className="mt-[4%] flex gap-8">
                   <div className=" flex flex-col gap-2 w-[75%]">
-                     <div className="z-50 rounded-s-3xl">
+                     <div className="z-50 rounded-s-3xl ">
                         <iframe
                            autoPlay
                            allowFullScreen
                            src={
                               videosrc
                                  ? videosrc.source
-                                 : "https://www.youtube.com/embed/IJ_14huTj6E?autoplay=1"
+                                 : "https://drive.google.com/file/d/1n2um39FJD2RVvmOoZeX8HdRJGyGu5ZT6/preview"
                            }
                            width="100%	"
                            className="left-0 rounded-xl min-h-[450px] h-[40vh]"
@@ -33,7 +33,9 @@ export default function VideoEditing() {
                      <div className="w-[100%] bg-slate-200 h-[100px] rounded-xl p-3">
                         asdasd
                      </div>
-                     <div>Video Editing Background</div>
+                     <div className="font-primary text-[40px] text-custom-secondary textshadow">
+                        Video Editing Background
+                     </div>
                      <div className="flex  justify-between">
                         {videoEditingIcon.map((videoIcon) => (
                            <VideoSlide

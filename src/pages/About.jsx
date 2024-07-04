@@ -11,43 +11,30 @@ const About = () => {
             </div>
             <div>
                <p className="text-xl mt-[30px]">
-                  I'm Daryl Louie Onlayao, a passionate individual navigating
-                  the exciting worlds of web development, web design, and
-                  virtual assistance.
+                  My journey into these fields began during the pandemic. Stuck
+                  at home, I was inspired by my brother, a seasoned web
+                  developer. What started as a curious dive into web development
+                  quickly turned into a real passion. I loved discovering the
+                  endless possibilities and creating impactful digital
+                  experiences, which made me decide to shift my career focus
+                  entirely.
                </p>
                <p className="text-xl mt-[30px]">
-                  My journey into these fields began amidst the challenges of
-                  the pandemic, where the influence of my brother, a seasoned
-                  web developer, opened my eyes to the vast opportunities within
-                  the digital realm. As we found ourselves confined to our
-                  homes, I immersed myself in learning about web development,
-                  initially out of curiosity.
+                  Since then, I've taken on various part-time roles as a virtual
+                  assistant, web developer, and web designer. Each job has
+                  helped me grow my skills and understand how these fields
+                  connect and complement each other.
                </p>
                <p className="text-xl mt-[30px]">
-                  However, as time progressed, my interest blossomed into a
-                  genuine passion. I was captivated by the endless possibilities
-                  and the ability to create impactful digital experiences. This
-                  newfound passion led me to make the bold decision to shift my
-                  career focus and pursue my dreams in web development.
+                  With a background in public education, I bring strong
+                  communication, organization, and adaptability to my work.
+                  Whether I’m coding a website, designing an interface, or
+                  providing virtual support, I approach every task with
+                  dedication and enthusiasm.
                </p>
                <p className="text-xl mt-[30px]">
-                  Along the way, I embraced various opportunities, including
-                  part-time roles as a virtual assistant, web developer, and
-                  even exploring web design. Each experience has enriched my
-                  skill set and provided valuable insights into the
-                  interconnected nature of these fields.
-               </p>
-               <p className="text-xl mt-[30px]">
-                  Drawing upon my background in public education, I bring a
-                  unique blend of communication, organization, and adaptability
-                  to my work. Whether it's coding a website, designing an
-                  interface, or providing virtual support, I approach each task
-                  with dedication and enthusiasm.
-               </p>
-               <p className="text-xl mt-[30px]">
-                  I'm eager to collaborate with you to bring your digital
-                  projects to life and make a meaningful impact in the online
-                  world.
+                  I’m excited to work with you and bring your digital projects
+                  to life, making a real impact in the online world.
                </p>
             </div>
          </div>

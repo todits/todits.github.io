@@ -3,6 +3,7 @@ import DigitalSlide from "../../components/DigitalSlide";
 import { DIGITALIMAGES } from "../../records/imageRecords";
 import VideoSlide from "../../components/VideoSlide";
 import { digitalArtIcon } from "../../records/records";
+import cover from "../../assets/images/skills/digitalArt/picture/cover.png";
 
 function DigitalArt() {
    const [image, setImage] = useState("sample");
@@ -45,8 +46,12 @@ function DigitalArt() {
                <div className="content h-[100%] flex place-items-center justify-center">
                   {showImage && (
                      <img
-                        className="showImage h-[55vh] max-h-[700px] object-contain max-w-[120%]"
-                        src={image}
+                        className={`showImage ${
+                           image === "sample"
+                              ? "h-full object-cover"
+                              : " h-[55vh] max-h-[700px] object-contain max-w-[120%]"
+                        }`}
+                        src={image === "sample" ? cover : image}
                         alt="Selected Digital Art"
                      />
                   )}

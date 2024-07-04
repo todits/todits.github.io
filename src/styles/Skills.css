@@ -121,44 +121,44 @@
 circle {
    fill: none;
    stroke: url(#GradientColor);
-   stroke-width: 20px;
-   stroke-dasharray: 450;
-   stroke-dashoffset: 450;
+   stroke-width: 19px;
+   stroke-dasharray: 370;
+   stroke-dashoffset: 370;
 }
-.videoEditing:hover .circle1 {
-   animation: hoverAnim1 0.5s linear forwards;
+.videoEditing:hover .circle85 {
+   animation: hoverAnim85 0.5s linear forwards;
 }
-.videoEditing:hover .circle2 {
-   animation: hoverAnim2 0.5s linear forwards;
+.videoEditing:hover .circle80 {
+   animation: hoverAnim80 0.5s linear forwards;
 }
-.videoEditing:hover .circle3 {
-   animation: hoverAnim3 0.5s linear forwards;
+.videoEditing:hover .circle75 {
+   animation: hoverAnim75 0.5s linear forwards;
 }
-.videoEditing:hover .circle4 {
-   animation: hoverAnim4 0.5s linear forwards;
+.videoEditing:hover .circle83 {
+   animation: hoverAnim83 0.5s linear forwards;
 }
 .videoEditing:hover .circle5 {
    animation: hoverAnim5 0.5s linear forwards;
 }
 
-@keyframes hoverAnim1 {
+@keyframes hoverAnim85 {
    100% {
-      stroke-dashoffset: 90;
+      stroke-dashoffset: 55.5;
    }
 }
-@keyframes hoverAnim2 {
+@keyframes hoverAnim80 {
    100% {
-      stroke-dashoffset: 157.5;
+      stroke-dashoffset: 74;
    }
 }
-@keyframes hoverAnim3 {
+@keyframes hoverAnim75 {
    100% {
-      stroke-dashoffset: 157.5;
+      stroke-dashoffset: 92.5;
    }
 }
-@keyframes hoverAnim4 {
+@keyframes hoverAnim83 {
    100% {
-      stroke-dashoffset: 157.5;
+      stroke-dashoffset: 62.9;
    }
 }
 @keyframes hoverAnim5 {
