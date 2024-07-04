@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b36a997a.css",
-    "main.js": "/portfolio/static/js/main.653282e8.js",
+    "main.css": "/portfolio/static/css/main.0d81dffd.css",
+    "main.js": "/portfolio/static/js/main.3bfa2948.js",
     "static/media/Facebook.png": "/portfolio/static/media/Facebook.7e1ca38dd9ea9529fb49.png",
     "static/media/Instagram.png": "/portfolio/static/media/Instagram.c75451e94baa1ab46564.png",
     "static/media/webDeveloping.png": "/portfolio/static/media/webDeveloping.6949829765057f58b088.png",
@@ -12,14 +12,18 @@
     "static/media/socialMedia.png": "/portfolio/static/media/socialMedia.3db20d43bdc293180cc0.png",
     "static/media/Portfolio Website.png": "/portfolio/static/media/Portfolio Website.d3962d636d46feb6612b.png",
     "static/media/Powerpoint.png": "/portfolio/static/media/Powerpoint.1bf493533fb773e0668e.png",
+    "static/media/projectnido.png": "/portfolio/static/media/projectnido.0d784477bce62ac83879.png",
     "static/media/image14.png": "/portfolio/static/media/image14.76a126d42e7fbbcc4657.png",
+    "static/media/sample_video1.png": "/portfolio/static/media/sample_video1.bda8a28f3c6e84b8bc8a.png",
     "static/media/image16.png": "/portfolio/static/media/image16.e78fda32af3edf36ade0.png",
     "static/media/icon14.png": "/portfolio/static/media/icon14.4022c4ee500635ca7882.png",
     "static/media/Girlboy2.png": "/portfolio/static/media/Girlboy2.919f154ccbe18f93dbad.png",
     "static/media/image15.png": "/portfolio/static/media/image15.c8d964f794b925cdfd6a.png",
+    "static/media/graduation.png": "/portfolio/static/media/graduation.adbbf393415ceaf18c06.png",
     "static/media/Divi.png": "/portfolio/static/media/Divi.80c4b17ded3d07eed047.png",
     "static/media/Tablet.png": "/portfolio/static/media/Tablet.3993e2c2e770413d0ea5.png",
     "static/media/logo2.png": "/portfolio/static/media/logo2.867f36002faebe72c9a1.png",
+    "static/media/cover.png": "/portfolio/static/media/cover.f307d2a3bba4efd35bcc.png",
     "static/media/Girlboy3.png": "/portfolio/static/media/Girlboy3.3a2e5e014a906b8917f6.png",
     "static/media/icon17.png": "/portfolio/static/media/icon17.caa87d3dd69ae74196df.png",
     "static/media/icon16.png": "/portfolio/static/media/icon16.618b65cebd86185ffa44.png",
@@ -93,11 +97,11 @@
     "static/media/GMeet.png": "/portfolio/static/media/GMeet.cb5d2dc2fda23328267c.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
-    "main.b36a997a.css.map": "/portfolio/static/css/main.b36a997a.css.map",
-    "main.653282e8.js.map": "/portfolio/static/js/main.653282e8.js.map"
+    "main.0d81dffd.css.map": "/portfolio/static/css/main.0d81dffd.css.map",
+    "main.3bfa2948.js.map": "/portfolio/static/js/main.3bfa2948.js.map"
   },
   "entrypoints": [
-    "static/css/main.b36a997a.css",
-    "static/js/main.653282e8.js"
+    "static/css/main.0d81dffd.css",
+    "static/js/main.3bfa2948.js"
   ]
 }
