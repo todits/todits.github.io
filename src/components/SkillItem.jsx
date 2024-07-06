@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "../styles/Skills.css";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react"
+import "../styles/Skills.css"
+import { NavLink } from "react-router-dom"
 
 export default function SkillItem({
    text,
@@ -14,12 +14,12 @@ export default function SkillItem({
    skill,
    selectedButton,
 }) {
-   const [clickSkill, setClickSkill] = useState("");
-   const imagesExist = image1 || image2 || image3 || image4 || image5 || image6;
+   const [clickSkill, setClickSkill] = useState("")
+   const imagesExist = image1 || image2 || image3 || image4 || image5 || image6
 
    const handleClickSkill = (value) => {
-      setClickSkill(value);
-   };
+      setClickSkill(value)
+   }
 
    return (
       <div>
@@ -28,16 +28,20 @@ export default function SkillItem({
                onClick={selectedButton}
                className="cursor-pointer skilltext group flex flex-col select-none self-center px-5 border-8 border-custom-primary rounded-lg"
             >
-               <div className="group-hover:opacity-0 group-hover:absolute duration-100 text-3xl 2xl:text-[40px]">
+               <div className="group-hover:opacity-0 group-hover:absolute duration-100 text-3xl min-[1600px]:text-[40px]">
                   {text}
                </div>
                <div className="opacity-0 group absolute group-hover:opacity-100 group-hover:relative duration-100 ">
-                  <div className="text-3xl 2xl:text-[40px]">{text}</div>
-                  <div className="2xl:text-xl text-base">Click for Details</div>
+                  <div className="text-3xl min-[1600px]:text-[40px]">
+                     {text}
+                  </div>
+                  <div className="min-[1600px]:text-xl text-base">
+                     Click for Details
+                  </div>
                </div>
             </button>
          ) : (
-            <div className="skilltext cursor-default select-none self-center px-5 text-3xl 2xl:text-[40px] bg-custom-primary rounded-lg">
+            <div className="skilltext cursor-default select-none self-center px-5 text-3xl min-[1600px]:text-[40px] bg-custom-primary rounded-lg">
                <div>{text}</div>
             </div>
          )}
@@ -53,5 +57,5 @@ export default function SkillItem({
             </div>
          )}
       </div>
-   );
+   )
 }

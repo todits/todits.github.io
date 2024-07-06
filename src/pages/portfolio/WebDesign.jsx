@@ -1,14 +1,14 @@
-import React from "react";
-import "../../styles/Skills.css";
-import { webDesignIcons } from "../../records/records";
-import VideoSlide from "../../components/VideoSlide";
-import Portfolio from "../Portfolio";
-import wordpress from "../../assets/skillIcons/Wordpress.png";
-import webImage1 from "../../assets/images/skills/webDesign/Portfolio Website.png";
-import webImage2 from "../../assets/images/skills/webDesign/Portfolio Website 2.png";
-import webImage3 from "../../assets/images/skills/webDesign/Portfolio Website 3.png";
+import React from "react"
+import "../../styles/Skills.css"
+import { webDesignIcons } from "../../records/records"
+import VideoSlide from "../../components/VideoSlide"
+import Portfolio from "../Portfolio"
+import wordpress from "../../assets/skillIcons/Wordpress.png"
+import webImage1 from "../../assets/images/skills/webDesign/Portfolio Website.png"
+import webImage2 from "../../assets/images/skills/webDesign/Portfolio Website 2.png"
+import webImage3 from "../../assets/images/skills/webDesign/Portfolio Website 3.png"
 
-import WebDesignExperience from "../../components/WebDesignExperience";
+import WebDesignExperience from "../../components/WebDesignExperience"
 
 const experiences = [
    {
@@ -34,15 +34,15 @@ const experiences = [
       text: `As a Shopify Website Assistant, I added new products with accurate descriptions and images, created and updated blog posts to improve SEO and attract traffic, and maintained the website content for current promotions and inventory changes. `,
       link: "https://www.ladesignboutique.com/",
    },
-];
+]
 
 export default function WebDesign() {
    return (
       <div name="webDesign" className="flex w-full  flex-col">
-         <div className="self-center font-primary 2xl:text-[80px] text-[60px] text-custom-secondary textshadow">
+         <div className="self-center font-primary max-[1600px]:text-[80px] text-[50px] text-custom-secondary textshadow">
             WEB DESIGN SKILLS
          </div>
-         <div className="flex justify-center relative mt-6">
+         <div className="flex justify-center relative max-[1600px]:mt-6">
             <div className="flex gap-8 z-10">
                {webDesignIcons.map((webIcon) => (
                   <VideoSlide
@@ -58,14 +58,14 @@ export default function WebDesign() {
                .
             </div>
          </div>
-         <div className="self-center max-w-screen-lg p-9 text-xl shadow-lg mt-10 shadow-custom-primary">
+         <div className="self-center max-w-screen-lg px-9 py-4 max-[1600px]:py-9 text-xl shadow-lg max-[1600px]:mt-10 mt-5 shadow-custom-primary">
             I've acquired valuable experience in elevating my current client's
             website. I practically rebranded the site, crafting a fresh version
             with additional features and functions to better cater to her
             customers and bolster her home services business.
          </div>
 
-         <div className="self-center font-primary text-4xl mt-16 bg-[#dfc7c5] py-4 px-6 rounded-lg text-custom-third ">
+         <div className="self-center font-primary text-4xl mt-10 max-[1600px]:mt-16 bg-[#dfc7c5] py-4 px-6 rounded-lg text-custom-third ">
             Previous Projects
          </div>
          <div className="flex max-w-screen-lg self-center w-[100%] my-11 flex-col">
@@ -79,5 +79,5 @@ export default function WebDesign() {
             ))}
          </div>
       </div>
-   );
+   )
 }

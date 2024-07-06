@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import Footer from "../../components/Footer";
-import VideoSlide from "../../components/VideoSlide";
-import { videoEditingIcon, videoThumbnails } from "../../records/records";
+import React, { useState } from "react"
+import Footer from "../../components/Footer"
+import VideoSlide from "../../components/VideoSlide"
+import { videoEditingIcon, videoThumbnails } from "../../records/records"
 
 export default function VideoEditing() {
-   const [videosrc, setVideosrc] = useState("");
+   const [videosrc, setVideosrc] = useState("")
 
    const handleClickVideo = (value) => {
-      setVideosrc(value);
-   };
+      setVideosrc(value)
+   }
 
    return (
       <div name="videoEditing" className=" flex h-screen skillsScreen w-full">
          <div className=" md:max-w-screen-xl  p-4 mx-auto flex flex-col place-content-start w-full h-full">
             <div>
-               <div className="mt-[4%] flex gap-8">
+               <div className="max-[1600px]:mt-[4%] mt-[0] flex gap-8">
                   <div className=" flex flex-col gap-2 w-[75%]">
                      <div className="z-50 rounded-s-3xl ">
                         <iframe
@@ -73,5 +73,5 @@ export default function VideoEditing() {
             </div>
          </div>
       </div>
-   );
+   )
 }

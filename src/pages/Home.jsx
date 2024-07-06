@@ -1,13 +1,13 @@
-import React from "react";
-import Profile from "../assets/profile.png";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-scroll";
-import SocialLinks from "./SocialLinks";
-import "../styles/Home.css";
-import facebook from "../assets/socialIcons/fb.png";
-import mail from "../assets/socialIcons/mail.png";
-import resume from "../assets/socialIcons/resume.png";
-import linkedIn from "../assets/socialIcons/linkedIn.png";
+import React from "react"
+import Profile from "../assets/profile.png"
+import { MdOutlineKeyboardArrowRight } from "react-icons/md"
+import { Link } from "react-scroll"
+import SocialLinks from "./SocialLinks"
+import "../styles/Home.css"
+import facebook from "../assets/socialIcons/fb.png"
+import mail from "../assets/socialIcons/mail.png"
+import resume from "../assets/socialIcons/resume.png"
+import linkedIn from "../assets/socialIcons/linkedIn.png"
 
 const socials = [
    {
@@ -31,7 +31,7 @@ const socials = [
       download: true,
       href: "/CV and Portfolio.pdf",
    },
-];
+]
 
 const Home = () => {
    return (
@@ -46,7 +46,7 @@ const Home = () => {
 					</h1> */}
                <h2
                   style={{ fontSize: "clamp(60px, 5vw, 100px)" }}
-                  className="text-7xl pt-[20px] 2xl:py-[50px] font-primary text-custom-secondary textshadow"
+                  className="text-7xl pt-[20px] max-[1600px]:py-[50px] font-primary text-custom-secondary textshadow"
                >
                   PERSONAL PORTFOLIO
                </h2>
@@ -54,11 +54,11 @@ const Home = () => {
             <div className="w-[100%] h-[100%] flex justify-between flex-col ">
                <div className="bg-[#bee7e7] ">
                   <div className="flex max-w-screen-lg mx-auto my-[20px] h-[auto]">
-                     <div className="flex flex-col justify-center w-[60%] shadow-md  rounded-lg shadow-custom-secondary p-[20px] bg-white 2xl:my-[5%] my-[20px]">
+                     <div className="flex flex-col justify-center w-[60%] shadow-md  rounded-lg shadow-custom-secondary p-[20px] bg-white max-[1600px]:my-[5%] my-[20px]">
                         <h2 className=" text-[50px] self-center font-bold text-custom-third">
                            DARYL LOUIE ONLAYAO
                         </h2>
-                        <div className="px-[20px] text-gray-600  pb-9">
+                        <div className="px-[20px] text-gray-600  max-[1600px]:pb-9">
                            <p className="  py-4">
                               Hello and welcome! I'm thrilled to have you here.
                            </p>
@@ -72,7 +72,7 @@ const Home = () => {
                               commitment to excellence and my drive to exceed
                               expectations.
                            </p>
-                           <p className=" 2xl:contents hidden">
+                           <p className=" max-[1600px]:contents hidden">
                               Thank you for joining me on this journey, and I
                               hope you find inspiration and excitement within
                               these pages.
@@ -82,8 +82,8 @@ const Home = () => {
                   </div>
                </div>
 
-               <div className=" py-[5px] w-full flex justify-center">
-                  <div className="max-w-screen-lg flex gap-5 w-[50%] mb-5 pl-[4%]">
+               <div className="  w-full flex justify-start">
+                  <div className="max-w-screen-lg flex gap-5  mb-5 pl-[4%]">
                      {socials.map(({ text, icon, href, download }) => (
                         <div
                            className="flex gap-1 socialIconPair cursor-pointer"
@@ -104,18 +104,18 @@ const Home = () => {
                         </div>
                      ))}
                   </div>
-                  <div className=" relative max-w-screen-sm w-[100%]">
-                     <img
-                        src={Profile}
-                        alt="my profile"
-                        className="rounded-2xl mx-auto 2xl:max-w-none w-[60vh] min absolute bottom-[-20%] 2xl:-right-[10%] right-[30px] min-w-[450px]"
-                     />
-                  </div>
+               </div>
+               <div className=" relative max-w-screen-lg w-[100%] self-center">
+                  <img
+                     src={Profile}
+                     alt="my profile"
+                     className="mx-auto max-[1600px]:max-w-none max-[1600px]:w-[60vh] w-[400px] absolute bottom-[0] right-0"
+                  />
                </div>
             </div>
          </div>
       </div>
-   );
-};
+   )
+}
 
-export default Home;
+export default Home

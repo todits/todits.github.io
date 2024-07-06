@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from "react";
-import SkillItem from "../components/SkillItem";
-import { SKILL_ITEMS } from "../records/records";
-import DigitalArt from "./portfolio/DigitalArt";
-import IconButton from "../components/IconButton";
-import WebDeveloping from "./portfolio/WebDeveloping";
-import VideoEditing from "./portfolio/VideoEditing";
-import WebDesign from "./portfolio/WebDesign";
-import SocialMediaManager from "./portfolio/SocialMediaManager";
-import skills from "../assets/images/skills/skillIcon/skills.png";
-import digitalArt from "../assets/images/skills/skillIcon/digitalArt.png";
-import webDeveloping from "../assets/images/skills/skillIcon/webDeveloping.png";
-import socialMedia from "../assets/images/skills/skillIcon/socialMedia.png";
-import webDesign from "../assets/images/skills/skillIcon/webDesign.png";
-import videoEditing from "../assets/images/skills/skillIcon/videoEditing.png";
-import { motion, AnimatePresence } from "framer-motion";
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useState } from "react"
+import SkillItem from "../components/SkillItem"
+import { SKILL_ITEMS } from "../records/records"
+import DigitalArt from "./portfolio/DigitalArt"
+import IconButton from "../components/IconButton"
+import WebDeveloping from "./portfolio/WebDeveloping"
+import VideoEditing from "./portfolio/VideoEditing"
+import WebDesign from "./portfolio/WebDesign"
+import SocialMediaManager from "./portfolio/SocialMediaManager"
+import skills from "../assets/images/skills/skillIcon/skills.png"
+import digitalArt from "../assets/images/skills/skillIcon/digitalArt.png"
+import webDeveloping from "../assets/images/skills/skillIcon/webDeveloping.png"
+import socialMedia from "../assets/images/skills/skillIcon/socialMedia.png"
+import webDesign from "../assets/images/skills/skillIcon/webDesign.png"
+import videoEditing from "../assets/images/skills/skillIcon/videoEditing.png"
+import { motion, AnimatePresence } from "framer-motion"
+import { NavLink } from "react-router-dom"
 
 const skillsset = [
    {
@@ -42,30 +42,30 @@ const skillsset = [
       image: socialMedia,
       label: "Social Media Manager",
    },
-];
+]
 
 export default function Skills() {
-   const [showSkillsList, setShowSkillsList] = useState(false);
-   const [selectedSkill, setSelectedSkill] = useState("Skills");
+   const [showSkillsList, setShowSkillsList] = useState(false)
+   const [selectedSkill, setSelectedSkill] = useState("Skills")
 
    useEffect(() => {
-      console.log("Selected Skill:", selectedSkill);
-   }, [selectedSkill]);
+      console.log("Selected Skill:", selectedSkill)
+   }, [selectedSkill])
 
    const handleClickSkill = (skillSelect) => {
-      setSelectedSkill(skillSelect);
+      setSelectedSkill(skillSelect)
       if (skillSelect === "Skills") {
-         setShowSkillsList(false);
+         setShowSkillsList(false)
       }
-   };
+   }
 
    return (
       <div
          name="skills"
-         className=" content flex flex-col 2xl:px-[0px] px-[20px] mx-auto  h-screen 2xl:min-h-[800px] min-h-0 w-full pt-[55px] 2xl:pt-[70px] pb-[20px] "
+         className=" content flex flex-col min-[1600px]:px-[0px] px-[20px] mx-auto  h-screen min-[1600px]:min-h-[800px] min-h-0 w-full pt-[55px] min-[1600px]:pt-[70px] pb-[20px] "
       >
          <div className="max-w-screen-xl justify-center self-center w-[100%]">
-            <div className=" flex gap-3 h-[100px] mt-[10px] justify-between ">
+            <div className=" flex gap-3 max-[1600px]:h-[100px] h-[70px] mt-[10px] justify-between ">
                <div className="self-center flex justify-center  ">
                   <p className="text-3xl font-primary  text-custom-third inline  border-gray-500">
                      {selectedSkill}
@@ -176,5 +176,5 @@ export default function Skills() {
             ) : undefined}
          </AnimatePresence>
       </div>
-   );
+   )
 }
