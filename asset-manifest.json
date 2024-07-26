@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.19ad36f3.css",
-    "main.js": "/portfolio/static/js/main.6ab25895.js",
+    "main.css": "/portfolio/static/css/main.96de4419.css",
+    "main.js": "/portfolio/static/js/main.5c5156d1.js",
     "static/media/Facebook.png": "/portfolio/static/media/Facebook.7e1ca38dd9ea9529fb49.png",
     "static/media/Instagram.png": "/portfolio/static/media/Instagram.c75451e94baa1ab46564.png",
     "static/media/webDeveloping.png": "/portfolio/static/media/webDeveloping.6949829765057f58b088.png",
@@ -42,6 +42,7 @@
     "static/media/image21.png": "/portfolio/static/media/image21.18f373ddc0fbb7cf6e07.png",
     "static/media/image10.png": "/portfolio/static/media/image10.fdb1d22cffceb74d8110.png",
     "static/media/image9.png": "/portfolio/static/media/image9.e540942620b73de90216.png",
+    "static/media/about.gif": "/portfolio/static/media/about.54f1aa421260987f8cd0.gif",
     "static/media/webDesign.png": "/portfolio/static/media/webDesign.ccc9806327fcc154066f.png",
     "static/media/image7.png": "/portfolio/static/media/image7.d3fb619f97f9fdf293bb.png",
     "static/media/Portfolio Website 3.png": "/portfolio/static/media/Portfolio Website 3.891f9c461a5ad78d593c.png",
@@ -106,16 +107,17 @@
     "static/media/icon11.png": "/portfolio/static/media/icon11.3ea8eac3c059b1b0a83a.png",
     "static/media/GDrive.png": "/portfolio/static/media/GDrive.ea9d10c2fbc858f01aaf.png",
     "static/media/html.png": "/portfolio/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/bubblespeach.png": "/portfolio/static/media/bubblespeach.399f4ffcb14319b261ee.png",
     "static/media/tailwind.png": "/portfolio/static/media/tailwind.e47ac876b8d4d0bba47a.png",
     "static/media/css.png": "/portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/GMeet.png": "/portfolio/static/media/GMeet.cb5d2dc2fda23328267c.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio/index.html",
-    "main.19ad36f3.css.map": "/portfolio/static/css/main.19ad36f3.css.map",
-    "main.6ab25895.js.map": "/portfolio/static/js/main.6ab25895.js.map"
+    "main.96de4419.css.map": "/portfolio/static/css/main.96de4419.css.map",
+    "main.5c5156d1.js.map": "/portfolio/static/js/main.5c5156d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.19ad36f3.css",
-    "static/js/main.6ab25895.js"
+    "static/css/main.96de4419.css",
+    "static/js/main.5c5156d1.js"
   ]
 }
