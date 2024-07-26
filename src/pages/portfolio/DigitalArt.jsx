@@ -1,26 +1,26 @@
-import React, { useState, useEffect } from "react"
-import DigitalSlide from "../../components/DigitalSlide"
-import { DIGITALIMAGES } from "../../records/imageRecords"
-import VideoSlide from "../../components/VideoSlide"
-import { digitalArtIcon } from "../../records/records"
-import cover from "../../assets/images/skills/digitalArt/picture/cover.png"
+import React, { useState, useEffect } from "react";
+import DigitalSlide from "../../components/DigitalSlide";
+import { DIGITALIMAGES } from "../../records/imageRecords";
+import VideoSlide from "../../components/VideoSlide";
+import { digitalArtIcon } from "../../records/records";
+import cover from "../../assets/images/skills/digitalArt/picture/cover.png";
 
 function DigitalArt() {
-   const [image, setImage] = useState("sample")
-   const [showImage, setShowImage] = useState(true)
+   const [image, setImage] = useState("sample");
+   const [showImage, setShowImage] = useState(true);
 
    useEffect(() => {
-      console.log("Selected Skill:")
-   }, [image])
+      console.log("Selected Skill:");
+   }, [image]);
 
    const handleClickImage = (getimage) => {
-      setImage(getimage.picture)
-      setShowImage(false)
+      setImage(getimage.picture);
+      setShowImage(false);
 
       setTimeout(() => {
-         setShowImage(true)
-      }, 0)
-   }
+         setShowImage(true);
+      }, 0);
+   };
 
    return (
       <div
@@ -37,7 +37,7 @@ function DigitalArt() {
                         name={icon}
                         isSelected={image === picture}
                      />
-                  )
+                  );
                })}
             </div>
          </div>
@@ -48,8 +48,8 @@ function DigitalArt() {
                      <img
                         className={`showImage ${
                            image === "sample"
-                              ? "max-[1600px]:h-full h-[500px] object-cover w-full"
-                              : "max-[1600px]:h-[55vh] h-[500px] max-h-[700px] object-contain max-w-[120%]"
+                              ? "min-[1600px]:h-full h-[500px] object-cover w-full"
+                              : "min-[1600px]:h-[55vh] h-[500px] max-h-[700px] object-contain max-w-[120%]"
                         }`}
                         src={image === "sample" ? cover : image}
                         alt="Selected Digital Art"
@@ -69,7 +69,7 @@ function DigitalArt() {
                   interest in pursuing a career as a virtual assistant within my
                   field.
                </p>
-               <div className="max-[1600px]:h-[50%] flex flex-col">
+               <div className="min-[1600px]:h-[50%] flex flex-col">
                   <p className="font-primary  text-custom-third text-[25px] text-center p-[10px]">
                      Digital art software background
                   </p>
@@ -90,7 +90,7 @@ function DigitalArt() {
             </div>
          </div>
       </div>
-   )
+   );
 }
 
-export default DigitalArt
+export default DigitalArt;

@@ -1,10 +1,10 @@
-import Image from "../assets/images/logo2.png"
-import "../styles/NavBar.css"
-import React from "react"
+import Image from "../assets/images/logo2.png";
+import "../styles/NavBar.css";
+import React from "react";
 
 export default function Header({ children }) {
    return (
-      <div className=" flex justify-between items-center w-full max-[1600px]:h-[80px] h-[60px] text-black fixed bg-custom-secondary px-4 navbarbackground">
+      <div className=" flex justify-between items-center w-full min-[1600px]:h-[80px] h-[60px] text-black fixed bg-custom-secondary px-4 navbarbackground">
          <div className="">
             <button
                style={{ fontSize: "clamp(30px, 2.5vw, 40px)" }}
@@ -17,7 +17,7 @@ export default function Header({ children }) {
          </div>
          <ul className="hidden md:flex">{children}</ul>
       </div>
-   )
+   );
 }
 
 /* <div

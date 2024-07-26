@@ -15,6 +15,13 @@ import icon14 from "../assets/images/skills/digitalArt/icon/icon14.png";
 import icon15 from "../assets/images/skills/digitalArt/icon/icon15.png";
 import icon16 from "../assets/images/skills/digitalArt/icon/icon16.png";
 import icon17 from "../assets/images/skills/digitalArt/icon/icon17.png";
+import icon18 from "../assets/images/skills/digitalArt/icon/icon18.png";
+import icon19 from "../assets/images/skills/digitalArt/icon/icon19.png";
+import icon20 from "../assets/images/skills/digitalArt/icon/icon20.png";
+import icon21 from "../assets/images/skills/digitalArt/icon/icon21.png";
+import icon22 from "../assets/images/skills/digitalArt/icon/icon22.png";
+import icon23 from "../assets/images/skills/digitalArt/icon/icon23.png";
+import icon24 from "../assets/images/skills/digitalArt/icon/icon24.png";
 import girlboy2 from "../assets/images/skills/digitalArt/picture/Girlboy2.png";
 import girlboy3 from "../assets/images/skills/digitalArt/picture/Girlboy3.png";
 import girlboy4 from "../assets/images/skills/digitalArt/picture/Girlboy4.png";
@@ -32,6 +39,13 @@ import image14 from "../assets/images/skills/digitalArt/picture/image14.png";
 import image15 from "../assets/images/skills/digitalArt/picture/image15.png";
 import image16 from "../assets/images/skills/digitalArt/picture/image16.png";
 import image17 from "../assets/images/skills/digitalArt/picture/image17.png";
+import image18 from "../assets/images/skills/digitalArt/picture/image18.png";
+import image19 from "../assets/images/skills/digitalArt/picture/image19.png";
+import image20 from "../assets/images/skills/digitalArt/picture/image20.png";
+import image21 from "../assets/images/skills/digitalArt/picture/image21.png";
+import image22 from "../assets/images/skills/digitalArt/picture/image22.png";
+import image23 from "../assets/images/skills/digitalArt/picture/image23.png";
+import image24 from "../assets/images/skills/digitalArt/picture/image24.png";
 
 export const DIGITALIMAGES = [
    {
@@ -118,5 +132,40 @@ export const DIGITALIMAGES = [
       id: 17,
       icon: icon17,
       picture: image17,
+   },
+   {
+      id: 18,
+      icon: icon18,
+      picture: image18,
+   },
+   {
+      id: 19,
+      icon: icon19,
+      picture: image19,
+   },
+   {
+      id: 20,
+      icon: icon20,
+      picture: image20,
+   },
+   {
+      id: 21,
+      icon: icon21,
+      picture: image21,
+   },
+   {
+      id: 22,
+      icon: icon22,
+      picture: image22,
+   },
+   {
+      id: 23,
+      icon: icon23,
+      picture: image23,
+   },
+   {
+      id: 24,
+      icon: icon24,
+      picture: image24,
    },
 ];
