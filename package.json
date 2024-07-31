@@ -1,5 +1,5 @@
 {
-   "homepage": "https://todits.github.io/portfolio",
+   "homepage": "./",
    "name": "personal-portfolio",
    "version": "0.1.0",
    "private": true,
@@ -50,3 +50,5 @@
       "tailwindcss": "^3.3.3"
    }
 }
+
+

@@ -105,7 +105,7 @@ const Home = () => {
                      ))}
                   </div>
                </div>
-               <div className=" absolute min-w-screen-lg w-[100%] self-center bottom-0">
+               <div className=" absolute max-w-screen-2xl w-[100%] self-center bottom-0">
                   <img
                      src={Profile}
                      alt="my profile"

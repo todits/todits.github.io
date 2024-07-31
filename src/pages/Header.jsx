@@ -1,20 +1,22 @@
 import Image from "../assets/images/logo2.png";
 import "../styles/NavBar.css";
 import React from "react";
+import logo from "../assets/images/icon.png";
 
 export default function Header({ children }) {
    return (
-      <div className=" flex justify-between items-center w-full min-[1600px]:h-[80px] h-[60px] text-black fixed bg-custom-secondary px-4 navbarbackground">
-         <div className="">
+      <div className=" flex justify-between items-center w-full min-[1600px]:h-[80px] h-[60px] text-black fixed bg-custom-secondary px-[5%] navbarbackground">
+         {/* <div className="">
             <button
                style={{ fontSize: "clamp(30px, 2.5vw, 40px)" }}
-               className="transitionObject font-primary  text-outline"
+               className="transitionObject font-primary  text-outline "
             >
-               DARYL LOUIE
+               <div className="scale-0">DARYL LOUIE</div>
             </button>
 
             <img src={Image} alt="" className="imageHover" />
-         </div>
+         </div> */}
+         <img src={logo} className="w-[50px] drop-shadow-2xl" />
          <ul className="hidden md:flex">{children}</ul>
       </div>
    );

@@ -53,6 +53,7 @@ function DigitalArt() {
                         }`}
                         src={image === "sample" ? cover : image}
                         alt="Selected Digital Art"
+                        loading="lazy"
                      />
                   )}
                </div>
