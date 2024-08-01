@@ -1,31 +1,31 @@
-import React from "react"
-import "../styles/Experience.css"
-import { EXPERIENCELIST } from "../records/records"
-import ExperienceList from "../components/ExperienceList"
+import React from "react";
+import "../styles/Experience.css";
+import { EXPERIENCELIST } from "../records/records";
+import ExperienceList from "../components/ExperienceList";
 
 const Experience = () => {
    return (
-      <div
-         name="experience"
-         className="flex h-screen w-full to-white bg-gradient-to-b  from-custom-background content "
-      >
-         <div className="max-w-screen-lg mx-auto flex-col justify-center place-items-center  w-full h-full relative mt-[100px]">
+      <div name="experience" className="flex h-screen w-full content ">
+         <div className=" mx-auto flex-col justify-center place-items-center  w-full h-full relative mt-[100px]">
             <p className="font-primary text-[70px] textshadow flex justify-center text-custom-secondary sm:text-[50px] font-bold self-center p-2 ">
                WORK EXPERIENCE
             </p>
-            <div className="relative flex mt-[20px] flex-col">
+            <div className="relative flex mt-[20px] flex-col justify-center place-items-center">
                {EXPERIENCELIST.map(
-                  ({
-                     id,
-                     year,
-                     employer,
-                     job,
-                     role1,
-                     role2,
-                     role3,
-                     role4,
-                     role5,
-                  }) => (
+                  (
+                     {
+                        id,
+                        year,
+                        employer,
+                        job,
+                        role1,
+                        role2,
+                        role3,
+                        role4,
+                        role5,
+                     },
+                     index
+                  ) => (
                      <ExperienceList
                         key={id}
                         year={year}
@@ -36,13 +36,14 @@ const Experience = () => {
                         role3={role3}
                         role4={role4}
                         role5={role5}
+                        index={index}
                      />
                   )
                )}
             </div>
          </div>
       </div>
-   )
-}
+   );
+};
 
-export default Experience
+export default Experience;

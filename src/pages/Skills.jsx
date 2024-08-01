@@ -81,8 +81,9 @@ export default function Skills() {
                         className={`flex gap-7`}
                         exit={{ x: "-50%", opacity: 0, scale: 0 }}
                      >
-                        {skillsset.map(({ image, label }) => (
+                        {skillsset.map(({ image, label }, index) => (
                            <IconButton
+                              key={index}
                               image={image}
                               iconselect={() => handleClickSkill(label)}
                               iconName={label}

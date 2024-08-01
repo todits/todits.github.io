@@ -37,11 +37,11 @@ function App() {
             ))}
          </Header>
          <div className="relative to-white bg-gradient-to-b  from-custom-background  h-full">
-            {selectedNavBar === "home" ? <Home /> : undefined}
-            {selectedNavBar === "about" ? <About /> : undefined}
-            {selectedNavBar === "skills" ? <Skills /> : undefined}
-            {selectedNavBar === "experience" ? <Experience /> : undefined}
-            {selectedNavBar === "contact" ? <Contact /> : undefined}
+            {selectedNavBar === "home" && <Home />}
+            {selectedNavBar === "about" && <About />}
+            {selectedNavBar === "skills" && <Skills />}
+            {selectedNavBar === "experience" && <Experience />}
+            {selectedNavBar === "contact" && <Contact />}
          </div>
       </div>
    );
