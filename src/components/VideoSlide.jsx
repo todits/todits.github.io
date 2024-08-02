@@ -25,6 +25,7 @@ export default function VideoSlide({ image, name, selectCircle, rate }) {
             </div>
 
             <svg
+               className="percent"
                xmlns="http://www.w3.org/2000/svg"
                version="1.1"
                width="150"

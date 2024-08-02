@@ -1,19 +1,35 @@
 import Image from "../assets/images/logo2.png";
 import "../styles/NavBar.css";
-import React, { useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import logo from "../assets/images/icon.png";
-import light from "../assets/images/light.png";
 import dark from "../assets/images/dark.png";
+import { FaMoon } from "react-icons/fa";
+import { MdSunny } from "react-icons/md";
+import { ThemeContext } from "../context/ThemeContext";
+import { IoMenu } from "react-icons/io5";
+import { IoCloseOutline } from "react-icons/io5";
 
 export default function Header({ children }) {
-   const [mode, setMode] = useState("light");
-   console.log(mode);
+   const { theme, setTheme } = useContext(ThemeContext);
+   const [openMenu, setOpenMenu] = useState(false);
+
+   const modal = useRef();
+
+   const handleClickMenu = () => {
+      modal.current.classList.toggle("mobile-toggle");
+   };
+
+   console.log(openMenu);
 
    const handleClickMode = () => {
-      setMode((prev) => (prev === "light" ? "dark" : "light"));
+      setTheme((prev) => (prev === "light" ? "dark" : "light"));
    };
    return (
-      <div className=" flex justify-between items-center w-full min-[1600px]:h-[80px] h-[60px] text-black fixed bg-custom-secondary px-[4%] navbarbackground">
+      <div
+         className={`flex justify-between items-center  duration-300 w-full min-[1600px]:h-[80px] h-[60px] text-black fixed ${
+            theme === "light" ? "bg-custom-secondary" : "bg-gray-800"
+         }  px-[4%] navbarbackground`}
+      >
          {/* <div className="">
             <button
                style={{ fontSize: "clamp(30px, 2.5vw, 40px)" }}
@@ -26,15 +42,31 @@ export default function Header({ children }) {
          </div> */}
          <img src={logo} className="w-[50px] drop-shadow-2xl" />
          <div className="flex relative">
-            <ul className="hidden md:flex mr-12 h-10 self-center">
-               {children}
-            </ul>
-            <button onClick={handleClickMode}>
-               {mode === "light" && (
-                  <img src={light} className="w-10 duration-200 showImage" />
+            <IoMenu
+               size={30}
+               className="text-white min-[768px]:hidden absolute right-[30px]"
+               onClick={handleClickMenu}
+            />
+            <div ref={modal} className="mobile-view relative duration-300">
+               <IoCloseOutline
+                  size={35}
+                  className="md:hidden visible absolute right-0 mr-4 text-white"
+                  onClick={handleClickMenu}
+               />
+               <ul className="md:flex md:mr-12 mr-0 h-10 self-center md:pt-0 pt-10">
+                  {children}
+               </ul>
+            </div>
+
+            <button onClick={handleClickMode} className="w-[20px]">
+               {theme === "dark" && (
+                  <FaMoon
+                     size={30}
+                     className="rise text-white user select-none"
+                  />
                )}
-               {mode === "dark" && (
-                  <img src={dark} className="w-10 duration-200 showImage" />
+               {theme === "light" && (
+                  <MdSunny size={30} className="rise  text-white select-none" />
                )}
             </button>
          </div>

@@ -6,7 +6,7 @@ import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
 import "./global.css";
-import React from "react";
+import React, { createContext } from "react";
 
 import Header from "./pages/Header";
 import NewNavbar from "./components/NewNavbar";
@@ -14,36 +14,37 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import navBarList from "./records/navBar.json";
+import ThemeContextProvider from "./context/ThemeContext";
 
 function App() {
    const [selectedNavBar, setSelectedNavBar] = useState("home");
 
    const handleClickNavbar = (selectedtab) => {
       setSelectedNavBar(selectedtab);
-
-      console.log(selectedNavBar);
    };
 
    return (
-      <div>
-         <Header>
-            {navBarList.map(({ link, id }) => (
-               <NewNavbar
-                  key={id}
-                  onSelectNav={() => handleClickNavbar(link)}
-                  name={link}
-                  isSelected={selectedNavBar === link}
-               />
-            ))}
-         </Header>
-         <div className="relative to-white bg-gradient-to-b  from-custom-background  h-full">
-            {selectedNavBar === "home" && <Home />}
-            {selectedNavBar === "about" && <About />}
-            {selectedNavBar === "skills" && <Skills />}
-            {selectedNavBar === "experience" && <Experience />}
-            {selectedNavBar === "contact" && <Contact />}
+      <ThemeContextProvider>
+         <div>
+            <Header>
+               {navBarList.map(({ link, id }) => (
+                  <NewNavbar
+                     key={id}
+                     onSelectNav={() => handleClickNavbar(link)}
+                     name={link}
+                     isSelected={selectedNavBar === link}
+                  />
+               ))}
+            </Header>
+            <div className="relative to-white bg-gradient-to-b  from-custom-background  h-full backdrop-blur-0">
+               {selectedNavBar === "home" && <Home />}
+               {selectedNavBar === "about" && <About />}
+               {selectedNavBar === "skills" && <Skills />}
+               {selectedNavBar === "experience" && <Experience />}
+               {selectedNavBar === "contact" && <Contact />}
+            </div>
          </div>
-      </div>
+      </ThemeContextProvider>
    );
 }
 //   <BrowserRouter>

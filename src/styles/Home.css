@@ -2,6 +2,10 @@
    text-shadow: 5px 5px 0 #bee7e7;
 }
 
+.textshadowdark {
+   text-shadow: 5px 5px 0 #535353;
+}
+
 /* .socialIconPair:hover .socialIcon {
 			transform: scale(1);
 		display: flex;
@@ -16,7 +20,6 @@
    opacity: 0;
    /* transition: transform 0.3s, opacity 0.3s; */
 
-   position: relative;
    transition-duration: 300ms;
    margin-left: -80px;
    width: 80px;
