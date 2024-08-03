@@ -26,7 +26,7 @@ export default function Header({ children }) {
    };
    return (
       <div
-         className={`flex justify-between items-center  duration-300 w-full min-[1600px]:h-[80px] h-[60px] text-black fixed ${
+         className={`flex justify-between max-md:h-[45px] items-center duration-300 w-full min-[1600px]:h-[80px] h-[60px] text-black fixed ${
             theme === "light" ? "bg-custom-secondary" : "bg-gray-800"
          }  px-[4%] navbarbackground`}
       >
@@ -40,20 +40,31 @@ export default function Header({ children }) {
 
             <img src={Image} alt="" className="imageHover" />
          </div> */}
-         <img src={logo} className="w-[50px] drop-shadow-2xl" />
+         <img
+            src={logo}
+            className="w-[50px] drop-shadow-2xl max-md:w-[35px] "
+         />
          <div className="flex relative">
             <IoMenu
                size={30}
-               className="text-white min-[768px]:hidden absolute right-[30px]"
+               className="text-white min-[768px]:hidden absolute   right-[30px]"
                onClick={handleClickMenu}
             />
-            <div ref={modal} className="mobile-view relative duration-300">
+            <div
+               ref={modal}
+               className={`mobile-view relative duration-300 ${
+                  theme === "light" ? "mobilelight" : "mobiledark"
+               }`}
+            >
                <IoCloseOutline
                   size={35}
                   className="md:hidden visible absolute right-0 mr-4 text-white"
                   onClick={handleClickMenu}
                />
-               <ul className="md:flex md:mr-12 mr-0 h-10 self-center md:pt-0 pt-10">
+               <ul
+                  onClick={handleClickMenu}
+                  className="md:flex md:h-10 h-full content-center md:mr-12 mr-0 max-md:w-[200px] self-center md:pt-0 pt-10 "
+               >
                   {children}
                </ul>
             </div>
@@ -62,11 +73,14 @@ export default function Header({ children }) {
                {theme === "dark" && (
                   <FaMoon
                      size={30}
-                     className="rise text-white user select-none"
+                     className="rise text-white user select-none max-md:w-[20px]"
                   />
                )}
                {theme === "light" && (
-                  <MdSunny size={30} className="rise  text-white select-none" />
+                  <MdSunny
+                     size={30}
+                     className="rise  text-white select-none max-md:w-[20px]"
+                  />
                )}
             </button>
          </div>

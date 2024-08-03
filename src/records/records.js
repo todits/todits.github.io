@@ -239,6 +239,16 @@ export const SKILL_ITEMS = [
       text: "Web Developing",
       skill: "webDeveloping",
    },
+   {
+      id: 7,
+      skillImages: "skillImages skillImages4 ",
+      image1: facebook,
+      image2: instagram,
+      image3: linkedin,
+      image4: tiktok,
+      text: "Social Media Manager",
+      skill: "socialMediaManager",
+   },
 
    {
       id: 6,
@@ -251,16 +261,7 @@ export const SKILL_ITEMS = [
       text: "Video Editing",
       skill: "videoEditing",
    },
-   {
-      id: 7,
-      skillImages: "skillImages skillImages4 ",
-      image1: facebook,
-      image2: instagram,
-      image3: linkedin,
-      image4: tiktok,
-      text: "Social Media Manager",
-      skill: "socialMediaManager",
-   },
+
    {
       id: 11,
       skillImages: "skillImages skillImages2 ",

@@ -36,7 +36,7 @@ function App() {
                   />
                ))}
             </Header>
-            <div className="relative to-white bg-gradient-to-b  from-custom-background  h-full backdrop-blur-0">
+            <div className="relative h-full backdrop-blur-0">
                {selectedNavBar === "home" && <Home />}
                {selectedNavBar === "about" && <About />}
                {selectedNavBar === "skills" && <Skills />}

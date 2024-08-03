@@ -175,16 +175,23 @@
 
 @media only screen and (max-width: 768px) {
    .mobile-view {
-      background-color: #008080;
       flex-direction: column;
-      height: 270px;
-      position: absolute;
-      right: 0;
+      height: 100%;
+      position: fixed;
+      left: 0;
       top: 0;
       padding: 10px;
-      margin-top: -10px;
-      margin-right: -220px;
       z-index: 20;
+      width: 100vw;
+      margin-top: -100vh;
+      text-align: -webkit-center;
+   }
+
+   .mobilelight {
+      background-color: #008080;
+   }
+   .mobiledark {
+      background-color: #1f2937;
    }
 
    .mobile-view::backdrop {
@@ -192,6 +199,6 @@
    }
 
    .mobile-toggle {
-      margin-right: -30px;
+      margin-top: 0;
    }
 }
