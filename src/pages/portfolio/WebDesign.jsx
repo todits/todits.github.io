@@ -42,7 +42,7 @@ export default function WebDesign() {
    return (
       <div name="webDesign" className="flex w-full  flex-col">
          <div
-            className={`self-center font-primary max-[1600px]:text-[50px] text-[80px] ${themeStyle.headingColor} ${themeStyle.shadow}`}
+            className={`self-center font-primary max-[1600px]:text-[5g0px] text-[80px] ${themeStyle.headingColor} ${themeStyle.shadow}`}
          >
             WEB DESIGN SKILLS
          </div>
