@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import laptop from "../../assets/images/skills/socialmedia/Laptop.png";
 import facebook from "../../assets/images/skills/socialmedia/Facebook.png";
 import instagram from "../../assets/images/skills/socialmedia/Instagram.png";
@@ -6,8 +6,10 @@ import phone from "../../assets/images/skills/socialmedia/Phone.png";
 import tablet from "../../assets/images/skills/socialmedia/Tablet.png";
 import { socialMediaManagerIcons } from "../../records/records";
 import VideoSlide from "../../components/VideoSlide";
+import { ThemeContext } from "../../context/ThemeContext";
 
 export default function SocialMediaManager() {
+   const { themeStyle } = useContext(ThemeContext);
    return (
       <div
          name="socialMediaManager"
@@ -56,7 +58,7 @@ export default function SocialMediaManager() {
                </a>
                <div className="absolute min-[1600px]:top-[280px] top-[180px] min-[1600px]:w-[600px] w-[500px] h-full">
                   <div className="min-[1600px]:w-[530px] w-[440px] flex flex-col justify-between text-justify text-xl bg-[#dcf3f3]  absolute z-[2] left-[35px] top-[25px] px-[30px] py-[20px] min-[1600px]:h-[370px] h-[300px]">
-                     <div className="leading-5 min-[1600px]:leading-tight min-[1600px]:text-[20px] text-[18px]">
+                     <div className="leading-5 text-black min-[1600px]:leading-tight min-[1600px]:text-[20px] text-[18px]">
                         With my experience managing social media accounts for
                         various clients and my own previous business, I bring a
                         strategic approach to digital marketing that drives
@@ -75,7 +77,9 @@ export default function SocialMediaManager() {
                   </div>
                </div>
             </div>
-            <div className="self-center font-primary min-[1600px]:text-[75px] min-[1600px]:py-[20px] text-[45px] text-custom-secondary textshadow">
+            <div
+               className={`${themeStyle.headingColor} ${themeStyle.shadow}  self-center font-primary min-[1600px]:text-[75px] min-[1600px]:py-[20px] text-[45px]`}
+            >
                SOCIAL MEDIA MANAGER BACKGROUND
             </div>
             <div className="flex justify-center relative mt-6">
@@ -90,7 +94,9 @@ export default function SocialMediaManager() {
                      />
                   ))}
                </div>
-               <div className="w-[100vw] bg-[#bee7e7] h-[140px] absolute mt-4 z-0">
+               <div
+                  className={`${themeStyle.backgroundStrip} w-[100vw] bg-[#bee7e7] h-[140px] absolute mt-4 z-0`}
+               >
                   .
                </div>
             </div>

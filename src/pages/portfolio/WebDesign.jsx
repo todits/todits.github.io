@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../../styles/Skills.css";
 import { webDesignIcons } from "../../records/records";
 import VideoSlide from "../../components/VideoSlide";
@@ -9,6 +9,7 @@ import webImage2 from "../../assets/images/skills/webDesign/Portfolio Website 2.
 import webImage3 from "../../assets/images/skills/webDesign/Portfolio Website 3.png";
 
 import WebDesignExperience from "../../components/WebDesignExperience";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const experiences = [
    {
@@ -37,9 +38,12 @@ const experiences = [
 ];
 
 export default function WebDesign() {
+   const { themeStyle } = useContext(ThemeContext);
    return (
       <div name="webDesign" className="flex w-full  flex-col">
-         <div className="self-center font-primary max-[1600px]:text-[80px] text-[50px] text-custom-secondary textshadow">
+         <div
+            className={`self-center font-primary max-[1600px]:text-[80px] text-[50px] ${themeStyle.headingColor} ${themeStyle.shadow}`}
+         >
             WEB DESIGN SKILLS
          </div>
          <div className="flex justify-center relative min-[1600px]:mt-6">
@@ -54,7 +58,9 @@ export default function WebDesign() {
                   />
                ))}
             </div>
-            <div className="w-[100vw] bg-[#bee7e7] h-[140px] absolute mt-4 z-0">
+            <div
+               className={`w-[100vw] ${themeStyle.backgroundStrip} h-[140px] absolute mt-4 z-0`}
+            >
                .
             </div>
          </div>
@@ -65,7 +71,7 @@ export default function WebDesign() {
             customers and bolster her home services business.
          </div>
 
-         <div className="self-center font-primary text-4xl mt-10 min-[1600px]:mt-16 bg-[#dfc7c5] py-4 px-6 rounded-lg text-custom-third ">
+         <div className="self-center font-primary text-4xl mt-10 min-[1600px]:mt-16 bg-[#dfc7c5] py-4 px-6 rounded-lg text-custom-third">
             Previous Projects
          </div>
          <div className="flex max-w-screen-lg self-center w-[100%] my-11 flex-col">

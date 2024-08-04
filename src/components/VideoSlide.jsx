@@ -1,13 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import "../styles/Portfolio.css";
+import { ThemeContext } from "../context/ThemeContext";
 
 export default function VideoSlide({ image, name, selectCircle, rate }) {
+   const { themeStyle } = useContext(ThemeContext);
    return (
       <div className="cursor-pointer videoEditing flex flex-col">
          <div className="flex justify-center">
             <img src={image} alt="" className="videoImage " />
          </div>
-         <div className="font-primary text-center leading-6 text-2xl text-custom-secondary w-[160px] ">
+         <div
+            className={`font-bold tracking-wide text-center leading-6 text-2xl ${themeStyle.headingColor} w-[160px]`}
+         >
             {name}
          </div>
          <div className="videoRate absolute">
@@ -16,7 +20,7 @@ export default function VideoSlide({ image, name, selectCircle, rate }) {
                   <div className="videoInner">
                      <div
                         id="number"
-                        className="font-primary text-2xl text-custom-third"
+                        className={`${themeStyle.brownHeading} font-primary text-2xl text-custom-third`}
                      >
                         {rate}%
                      </div>

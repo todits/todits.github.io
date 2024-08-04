@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import Footer from "../../components/Footer";
 import VideoSlide from "../../components/VideoSlide";
 import { videoEditingIcon, videoThumbnails } from "../../records/records";
+import { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
 
 export default function VideoEditing() {
+   const { themeStyle } = useContext(ThemeContext);
    const [videosrc, setVideosrc] = useState("");
 
    const handleClickVideo = (value) => {
@@ -30,10 +33,10 @@ export default function VideoEditing() {
                         ></iframe>
                      </div>
                      <div className="text-2xl">{videosrc.title}</div>
-                     <div className="w-[100%] bg-slate-200 h-[100px] rounded-xl p-3">
-                        asdasd
-                     </div>
-                     <div className="font-primary text-[40px] text-custom-secondary textshadow">
+                     <div className="w-[100%] bg-slate-200 h-[100px] rounded-xl p-3"></div>
+                     <div
+                        className={`${themeStyle.headingColor} ${themeStyle.shadow} font-primary text-[40px] text-custom-secondary textshadow`}
+                     >
                         Video Editing Background
                      </div>
                      <div className="flex  justify-between">

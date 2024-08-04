@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import DigitalSlide from "../../components/DigitalSlide";
 import { DIGITALIMAGES } from "../../records/imageRecords";
 import VideoSlide from "../../components/VideoSlide";
 import { digitalArtIcon } from "../../records/records";
 import cover from "../../assets/images/skills/digitalArt/picture/cover.png";
+import { ThemeContext } from "../../context/ThemeContext";
 
 function DigitalArt() {
    const [image, setImage] = useState("sample");
    const [showImage, setShowImage] = useState(true);
+   const { themeStyle } = useContext(ThemeContext);
 
    useEffect(() => {
       console.log("Selected Skill:");
@@ -27,7 +29,7 @@ function DigitalArt() {
          name="digitalArt"
          className=" skillsScreen relative justify-start max-w-screen-xl p-4 mx-auto flex flex-col place-content-start w-full h-full"
       >
-         <div className="flex justify-center border-[7px] border-solid rounded-lg  border-custom-primary">
+         <div className="flex justify-center border-[5px] border-solid rounded-lg  border-custom-primary">
             <div className="grid grid-flow-col grid-rows-2 gap-[5px] overflowscroll p-[5px]">
                {DIGITALIMAGES.map(({ id, icon, picture }) => {
                   return (
@@ -42,7 +44,7 @@ function DigitalArt() {
             </div>
          </div>
          <div className="flex justify-between my-[0.75rem] gap-3 h-[100%] max-h-[800px]">
-            <div className=" w-[40%] bg-custom-background border-[7px] border-solid border-custom-primary rounded-lg flex justify-center place-items-center ">
+            <div className=" w-[40%] bg-custom-background border-[5px] border-solid border-custom-primary rounded-lg flex justify-center place-items-center ">
                <div className="content h-[100%] flex place-items-center justify-center w-full">
                   {showImage && (
                      <img
@@ -59,7 +61,9 @@ function DigitalArt() {
                </div>
             </div>
 
-            <div className="w-[60%] flex flex-col bg-custom-background border-[7px] border-solid border-custom-primary rounded-lg justify-between p-[20px] ">
+            <div
+               className={`${themeStyle.backgroundColor} w-[60%] flex flex-col  border-[5px] border-solid border-custom-primary rounded-lg justify-between p-[20px]`}
+            >
                <p className="text-justify px-[20px] h-[50%] place-items-center flex">
                   Having previously served as both a Division and National
                   illustrator for the Department of Education, I have created
@@ -71,7 +75,9 @@ function DigitalArt() {
                   field.
                </p>
                <div className="min-[1600px]:h-[50%] flex flex-col">
-                  <p className="font-primary  text-custom-third text-[25px] text-center p-[10px]">
+                  <p
+                     className={`${themeStyle.brownHeading} font-primary text-[25px] text-center p-[10px]`}
+                  >
                      Digital art software background
                   </p>
                   <div className="flex justify-center gap-3">

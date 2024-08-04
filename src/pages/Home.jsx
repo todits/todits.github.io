@@ -47,7 +47,7 @@ const socials = [
 ];
 
 const Home = () => {
-   const { theme } = useContext(ThemeContext);
+   const { theme, themeStyle } = useContext(ThemeContext);
    const backgroundtext =
       theme === "light"
          ? "text-custom-secondary duration-300"
@@ -64,7 +64,7 @@ const Home = () => {
    return (
       <div
          name="home"
-         className={`flex h-screen w-full max-sm:h-full relative content ${textcolor}`}
+         className="flex h-screen w-full max-sm:h-full relative content"
       >
          <img
             className="absolute z-0 h-full w-full object-cover opacity-70 "
@@ -112,7 +112,7 @@ const Home = () => {
                      >
                         ONLAYAO
                      </h2>
-                     <div className={`${fontcolor}   pb-7`}>
+                     <div className={`pb-7`}>
                         <h3 className="pb-4 max-md:text-[15px] max-md:pb-2 max-md:leading-4">
                            In this portfolio, I'm excited to showcase my journey
                            and the work that I've poured my heart into.

@@ -6,6 +6,10 @@
    text-shadow: 5px 5px 0 #535353;
 }
 
+.textshadowdark2 {
+   text-shadow: 5px 5px 0 #000000;
+}
+
 /* .socialIconPair:hover .socialIcon {
 			transform: scale(1);
 		display: flex;

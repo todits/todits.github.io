@@ -62,12 +62,12 @@ export default function Skills() {
    return (
       <div
          name="skills"
-         className=" content flex flex-col min-[1600px]:px-[0px] px-[20px] mx-auto  h-screen min-[1600px]:min-h-[800px] min-h-0 w-full pt-[55px] min-[1600px]:pt-[70px] pb-[20px] "
+         className=" content max-w-screen-xl max-md:pt-[40px] max-md:px-[20px] flex flex-col min-[1600px]:px-[0px] px-[50px] mx-auto min-[1600px]:min-h-[800px]  w-full pt-[55px] min-[1600px]:pt-[70px] pb-[20px] "
       >
          <div className="max-w-screen-xl justify-center self-center w-[100%]">
-            <div className=" flex gap-3 min-[1600px]:h-[100px] h-[70px] mt-[10px] justify-between ">
+            <div className=" flex gap-3 max-md:h-[50px] min-[1600px]:h-[100px] h-[70px] mt-[10px] justify-between ">
                <div className="self-center flex justify-center  ">
-                  <p className="text-3xl font-primary  text-custom-third inline  border-gray-500">
+                  <p className="text-3xl max-md:text-[25px] font-primary  text-custom-third inline  border-gray-500">
                      {selectedSkill}
                   </p>
                </div>
@@ -96,7 +96,7 @@ export default function Skills() {
          </div>
 
          {selectedSkill === "Skills" ? (
-            <div className="grid-cols-3 grid gap-[5%] font-primary max-w-screen-xl self-center w-[100%] text-center text-custom-secondary text-4xl ">
+            <div className="grid-cols-3 webkitcenter max-md:grid-cols-1 max-md:gap-[1%] grid gap-[5%] font-primary max-w-screen-xl self-center w-[100%] text-center text-custom-secondary text-4xl ">
                {SKILL_ITEMS.map((skill) => (
                   <SkillItem
                      key={skill.id}

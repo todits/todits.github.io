@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import WebSlide from "../../components/WebSlide";
 import Footer from "../../components/Footer";
 import { skills } from "../../records/records";
@@ -7,6 +7,7 @@ import image1 from "../../assets/images/skills/webDeveloping/project1.png";
 import image2 from "../../assets/images/skills/webDeveloping/project2.png";
 import image3 from "../../assets/images/skills/webDeveloping/project3.png";
 import image4 from "../../assets/images/skills/webDeveloping/project4.png";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Projects = [
    {
@@ -79,6 +80,8 @@ const Projects = [
 ];
 
 function WebDeveloping() {
+   const { themeStyle } = useContext(ThemeContext);
+
    const repeatCount = 3; // Number of times to repeat the `skills` rendering
 
    const repeatedSkills = [];
@@ -107,7 +110,9 @@ function WebDeveloping() {
             <div className="flex justify-between">
                <div className=" relative h-[80vh] min-h-[800px] "></div>
                <div className="flex justify-start flex-col w-[85%] gap-2">
-                  <div className="font-primary text-custom-secondary text-[50px] textshadow min-[1600px]:text-[70px]">
+                  <div
+                     className={`${themeStyle.headingColor} ${themeStyle.shadow}  font-primary text-[50px] textshadow min-[1600px]:text-[70px]`}
+                  >
                      WEB DEVELOPING SKILLS
                   </div>
                   <p className=" px-11  place-items-center text-xl">
@@ -120,14 +125,16 @@ function WebDeveloping() {
                      I gained practical experience by working part-time as a web
                      developer alongside my brother.
                   </p>
-                  <h2 className="py-6 text-center font-primary text-custom-third ">
+                  <h2
+                     className={`py-6 text-center font-primary text-custom-third ${themeStyle.brownHeading}`}
+                  >
                      Check out some of my work right here
                   </h2>
                   <div className="grid gap-6 grid-cols-3 max-[1300px]:grid-cols-2">
                      {Projects.map(
                         ({ id, image, title, link, description, skills }) => (
                            <a
-                              className="w-full cursor-pointer bg-white shadow rounded-lg border-custom-primary border hover:scale-105 duration-300 flex flex-col h-full"
+                              className={`${themeStyle.bgWhite} w-full cursor-pointer  shadow rounded-lg border-custom-primary border hover:scale-105 duration-300 flex flex-col h-full`}
                               key={id}
                               href={link}
                               target="_blank"
@@ -140,7 +147,9 @@ function WebDeveloping() {
                               />
                               <div className="py-[10px] px-[20px] flex flex-col h-full justify-between">
                                  <div>
-                                    <h3 className=" text-center w-full font-bold text-custom-third">
+                                    <h3
+                                       className={`${themeStyle.brownHeading} text-center w-full font-bold text-custom-third`}
+                                    >
                                        {title}
                                     </h3>
                                     <p className="text-[15px] pt-[10px]">
@@ -152,7 +161,7 @@ function WebDeveloping() {
                                        skills.map(({ id, skill }) => (
                                           <div
                                              key={id}
-                                             className="px-3 py-[3px] bg-custom-primary rounded-md text-[14px]"
+                                             className="px-3 py-[3px] bg-custom-primary rounded-md text-black text-[14px]"
                                           >
                                              {/* mx-[5px] my-[4px] bg-[#cdf7f7]*/}
                                              {skill}

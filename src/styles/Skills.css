@@ -21,6 +21,26 @@
    }
 }
 
+@media only screen and (max-width: 768px) {
+   .skilltext {
+      height: auto;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s ease-in-out;
+      font-size: 19px;
+      line-height: 1.1;
+      max-width: 300px;
+   }
+   .skilltextpadding {
+      padding: 8px 10px;
+   }
+   .webkitcenter {
+      text-align: -webkit-center;
+   }
+}
+
 .skilltext:hover {
    color: white;
    background-color: rgb(98, 58, 56);
