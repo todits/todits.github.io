@@ -1,0 +1,31 @@
+p {
+   font-size: 20px; /* Change the font size to your desired value */
+}
+
+h1 {
+   font-size: 40px;
+}
+
+h2 {
+   font-size: 30px;
+}
+
+h3 {
+   font-size: 22px;
+}
+
+@media only screen and (max-width: 768px) {
+   /* p {
+      font-size: 15px;
+   } */
+}
+
+@media only screen and (max-width: 1600px) {
+   h3 {
+      font-size: 17px;
+      line-height: 1.2;
+   }
+   p {
+      font-size: 18px; /* Change the font size to your desired value */
+   }
+}
