@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import SkillItem from "../components/SkillItem"
 import { SKILL_ITEMS } from "../records/records"
 import DigitalArt from "./portfolio/DigitalArt"
@@ -15,6 +15,7 @@ import webDesign from "../assets/images/skills/skillIcon/webDesign.png"
 import videoEditing from "../assets/images/skills/skillIcon/videoEditing.png"
 import { motion, AnimatePresence } from "framer-motion"
 import { NavLink } from "react-router-dom"
+import { ThemeContext } from "../context/ThemeContext"
 
 const skillsset = [
    {
@@ -47,6 +48,7 @@ const skillsset = [
 export default function Skills() {
    const [showSkillsList, setShowSkillsList] = useState(false)
    const [selectedSkill, setSelectedSkill] = useState("Skills")
+   const { themeStyle } = useContext(ThemeContext)
 
    useEffect(() => {
       console.log("Selected Skill:", selectedSkill)
@@ -62,14 +64,20 @@ export default function Skills() {
    return (
       <div
          name="skills"
-         className=" content max-w-screen-xl max-lg:max-w-screen-md max-md:pt-[40px] max-md:px-[20px] flex flex-col min-[1600px]:px-[0px] px-[50px] mx-auto min-[1600px]:min-h-[800px]  w-full pt-[40px] min-[1600px]:pt-[70px] pb-[20px] "
+         className=" content max-w-screen-xl min-h-screen h-full max-md:pt-[40px] max-md:px-[20px] flex flex-col min-[1600px]:px-[0px] px-[5%] mx-auto min-[1600px]:min-h-[100vh]  w-full pt-[40px] min-[1600px]:pt-[70px] pb-[20px] "
       >
          <div className="max-w-screen-xl justify-center self-center w-[100%]">
-            <div className=" flex gap-3 max-md:h-[50px] min-[1600px]:h-[100px] h-[70px] mt-[10px] justify-between ">
-               <div className="self-center flex justify-center  ">
-                  <p className="text-3xl max-md:text-[25px] font-primary  text-custom-third inline  border-gray-500">
+            <div className=" flex gap-3 max-md:flex-col max-md:h-auto min-[1600px]:h-[100px] h-[70px] mt-[10px] justify-between ">
+               <div
+                  className={` max-md:self-center flex justify-center ${
+                     selectedSkill === "Skills" ? undefined : "max-md:hidden"
+                  }`}
+               >
+                  <h2
+                     className={`${themeStyle.brownHeading} text-3xl max-md:text-[25px] font-primary  inline  border-gray-500`}
+                  >
                      {selectedSkill}
-                  </p>
+                  </h2>
                </div>
                <AnimatePresence>
                   {selectedSkill !== "Skills" ? (
@@ -78,7 +86,7 @@ export default function Skills() {
                         initial={{ x: "-50%", opacity: 0, scale: 0 }}
                         animate={{ x: 0, opacity: 1, scale: 1 }}
                         transition={{ duration: 0.3, ease: "easeOut" }}
-                        className={`flex gap-7`}
+                        className={`flex gap-7 max-md:justify-center`}
                         exit={{ x: "-50%", opacity: 0, scale: 0 }}
                      >
                         {skillsset.map(({ image, label }, index) => (

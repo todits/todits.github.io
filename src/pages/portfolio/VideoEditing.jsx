@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import Footer from "../../components/Footer";
-import VideoSlide from "../../components/VideoSlide";
-import { videoEditingIcon, videoThumbnails } from "../../records/records";
-import { useContext } from "react";
-import { ThemeContext } from "../../context/ThemeContext";
+import React, { useState } from "react"
+import Footer from "../../components/Footer"
+import VideoSlide from "../../components/VideoSlide"
+import { videoEditingIcon, videoThumbnails } from "../../records/records"
+import { useContext } from "react"
+import { ThemeContext } from "../../context/ThemeContext"
 
 export default function VideoEditing() {
-   const { themeStyle } = useContext(ThemeContext);
-   const [videosrc, setVideosrc] = useState("");
+   const { themeStyle } = useContext(ThemeContext)
+   const [videosrc, setVideosrc] = useState("")
 
    const handleClickVideo = (value) => {
-      setVideosrc(value);
-   };
+      setVideosrc(value)
+   }
 
    return (
       <div name="videoEditing" className=" flex h-screen skillsScreen w-full">
@@ -76,5 +76,5 @@ export default function VideoEditing() {
             </div>
          </div>
       </div>
-   );
+   )
 }

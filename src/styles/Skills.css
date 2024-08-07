@@ -40,6 +40,12 @@
    .webkitcenter {
       text-align: -webkit-center;
    }
+   .videoEditing:hover .videoImage {
+      transform: scale(1) !important;
+   }
+   .videoImage {
+      width: 60px !important;
+   }
 }
 
 .skilltext:hover {

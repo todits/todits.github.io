@@ -63,7 +63,7 @@ export default function Header({ children }) {
                />
                <ul
                   onClick={handleClickMenu}
-                  className="md:flex max-md:h-10 h-full content-center md:mr-12 mr-0 max-md:w-[200px] self-center md:pt-0 pt-10 "
+                  className="md:flex  h-full content-center md:mr-12 mr-0 max-md:w-[200px] self-center md:pt-0 pt-10 "
                >
                   {children}
                </ul>

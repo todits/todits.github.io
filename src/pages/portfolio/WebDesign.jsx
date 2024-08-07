@@ -42,12 +42,12 @@ export default function WebDesign() {
    return (
       <div name="webDesign" className="flex w-full  flex-col">
          <div
-            className={`self-center font-primary max-[1600px]:text-[5g0px] text-[80px] ${themeStyle.headingColor} ${themeStyle.shadow}`}
+            className={`self-center font-primary max-md:text-[30px] max-[1600px]:text-[50px] text-[80px] ${themeStyle.headingColor} ${themeStyle.shadow}`}
          >
             WEB DESIGN SKILLS
          </div>
          <div className="flex justify-center relative min-[1600px]:mt-6">
-            <div className="flex gap-8 z-10">
+            <div className="flex gap-8 max-md:gap-0 z-10 ">
                {webDesignIcons.map((webIcon) => (
                   <VideoSlide
                      key={webIcon.id}
@@ -59,22 +59,22 @@ export default function WebDesign() {
                ))}
             </div>
             <div
-               className={`w-[100vw] ${themeStyle.backgroundStrip} h-[140px] absolute mt-4 z-0`}
+               className={`w-[100vw] ${themeStyle.backgroundStrip} h-[140px] max-md:h-[65px] max-md:mt-2 absolute mt-4 z-0`}
             >
                .
             </div>
          </div>
-         <div className="self-center max-w-screen-lg px-9 py-4 min-[1600px]:py-9 text-xl shadow-lg min-[1600px]:mt-10 mt-5 shadow-custom-primary">
+         <p className="self-center max-w-screen-lg px-[5%] py-4 min-[1600px]:py-9  shadow-lg min-[1600px]:mt-10 mt-5 shadow-custom-primary">
             I've acquired valuable experience in elevating my current client's
             website. I practically rebranded the site, crafting a fresh version
             with additional features and functions to better cater to her
             customers and bolster her home services business.
-         </div>
+         </p>
 
-         <div className="self-center font-primary text-4xl mt-10 min-[1600px]:mt-16 bg-[#dfc7c5] py-4 px-6 rounded-lg text-custom-third">
+         <h2 className="self-center font-primary  mt-10 min-[1600px]:mt-16 bg-[#dfc7c5] py-[1%] px-[5%] rounded-lg text-custom-third">
             Previous Projects
-         </div>
-         <div className="flex max-w-screen-lg self-center w-[100%] my-11 flex-col">
+         </h2>
+         <div className="flex max-w-screen-lg self-center w-[100%] max-md:my-0  my-11 px-[20px] flex-col">
             {experiences.map(({ image, text, id, link }) => (
                <WebDesignExperience
                   image={image}

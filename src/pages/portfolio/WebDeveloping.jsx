@@ -82,7 +82,7 @@ const Projects = [
 function WebDeveloping() {
    const { themeStyle } = useContext(ThemeContext)
 
-   const repeatCount = 3 // Number of times to repeat the `skills` rendering
+   const repeatCount = 4 // Number of times to repeat the `skills` rendering
 
    const repeatedSkills = []
    for (let i = 0; i < repeatCount; i++) {
@@ -101,21 +101,24 @@ function WebDeveloping() {
 
    return (
       <div name="webDeveloping" className="flex w-full">
-         <div className="max-w-screen-xl p-4 mx-auto flex flex-col place-content-start w-full h-full">
-            <div className=" slidecontainer">
-               <div className="slidegroup">
-                  <div className="gap-2 z-50 slide-track">{repeatedSkills}</div>
+         <div className="max-w-screen-xl p-4 max-md:p-0 max-md:pt-4 mx-auto flex flex-col place-content-start w-full h-full">
+            <div className="sticky top-[10%]">
+               <div className=" slidecontainer">
+                  <div className="slidegroup">
+                     <div className="gap-2 z-50 ">{repeatedSkills}</div>
+                  </div>
                </div>
             </div>
+
             <div className="flex justify-between">
                <div className=" relative h-[80vh] min-h-[800px] "></div>
-               <div className="flex justify-start flex-col w-[85%] gap-2">
+               <div className="flex justify-start flex-col w-[85%] gap-2 max-md:pl-[5%]">
                   <div
-                     className={`${themeStyle.headingColor} ${themeStyle.shadow}  font-primary text-[50px] textshadow min-[1600px]:text-[70px]`}
+                     className={`${themeStyle.headingColor} ${themeStyle.shadow} max-md:px-0 font-primary text-[50px] max-md:text-[30px] max-md:text-center max-md:leading-8 textshadow min-[1600px]:text-[70px]`}
                   >
                      WEB DEVELOPING SKILLS
                   </div>
-                  <p className=" px-11  place-items-center text-xl">
+                  <p className=" px-11 max-md:px-0 place-items-center">
                      While working as a teacher, I had the opportunity to be
                      exposed to web development through my brother, who works as
                      a web developer. He taught me the ropes of web development,
@@ -126,15 +129,15 @@ function WebDeveloping() {
                      developer alongside my brother.
                   </p>
                   <h2
-                     className={`py-6 text-center font-primary text-custom-third ${themeStyle.brownHeading}`}
+                     className={`py-6 text-center leading-6 font-primary text-custom-third ${themeStyle.brownHeading}`}
                   >
                      Check out some of my work right here
                   </h2>
-                  <div className="grid gap-6 grid-cols-3 max-[1300px]:grid-cols-2">
+                  <div className="grid gap-6 grid-cols-3 max-[1300px]:grid-cols-2 max-md:grid-cols-1">
                      {Projects.map(
                         ({ id, image, title, link, description, skills }) => (
                            <a
-                              className={`${themeStyle.bgWhite} w-full cursor-pointer  shadow rounded-lg border-custom-primary border hover:scale-105 duration-300 flex flex-col h-full`}
+                              className={`${themeStyle.bgWhite} w-full cursor-pointer  shadow rounded-lg border-custom-primary border hover:scale-105 max-md:hover:scale-100 duration-300 flex flex-col h-full`}
                               key={id}
                               href={link}
                               target="_blank"
@@ -145,7 +148,7 @@ function WebDeveloping() {
                                  className="rounded-md "
                                  loading="lazy"
                               />
-                              <div className="py-[10px] px-[20px] flex flex-col h-full justify-between">
+                              <div className="py-[10px] px-[5%] flex flex-col h-full justify-between">
                                  <div>
                                     <h3
                                        className={`${themeStyle.brownHeading} text-center w-full font-bold text-custom-third`}
@@ -161,7 +164,7 @@ function WebDeveloping() {
                                        skills.map(({ id, skill }) => (
                                           <div
                                              key={id}
-                                             className="px-3 py-[3px] bg-custom-primary rounded-md text-black text-[14px]"
+                                             className="px-3 py-[1px] bg-custom-primary rounded-md text-black  text-[13px]"
                                           >
                                              {/* mx-[5px] my-[4px] bg-[#cdf7f7]*/}
                                              {skill}

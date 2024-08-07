@@ -1,15 +1,15 @@
-import React, { useContext } from "react";
-import laptop from "../../assets/images/skills/socialmedia/Laptop.png";
-import facebook from "../../assets/images/skills/socialmedia/Facebook.png";
-import instagram from "../../assets/images/skills/socialmedia/Instagram.png";
-import phone from "../../assets/images/skills/socialmedia/Phone.png";
-import tablet from "../../assets/images/skills/socialmedia/Tablet.png";
-import { socialMediaManagerIcons } from "../../records/records";
-import VideoSlide from "../../components/VideoSlide";
-import { ThemeContext } from "../../context/ThemeContext";
+import React, { useContext } from "react"
+import laptop from "../../assets/images/skills/socialmedia/Laptop.png"
+import facebook from "../../assets/images/skills/socialmedia/Facebook.png"
+import instagram from "../../assets/images/skills/socialmedia/Instagram.png"
+import phone from "../../assets/images/skills/socialmedia/Phone.png"
+import tablet from "../../assets/images/skills/socialmedia/Tablet.png"
+import { socialMediaManagerIcons } from "../../records/records"
+import VideoSlide from "../../components/VideoSlide"
+import { ThemeContext } from "../../context/ThemeContext"
 
 export default function SocialMediaManager() {
-   const { themeStyle } = useContext(ThemeContext);
+   const { themeStyle } = useContext(ThemeContext)
    return (
       <div
          name="socialMediaManager"
@@ -18,10 +18,9 @@ export default function SocialMediaManager() {
          {/* from-white bg-gradient-to-b  to-custom-background */}
 
          <div className=" p-4 pt-5  flex flex-col place-content-start  h-full">
-            <div className="relative h-[550px] min-[1600px]:h-[730px]  max-w-screen-xl mx-auto w-full self-center">
-               <div className="flex min-[1600px]:w-[1010px] w-[800px]  flex-col place-items-center absolute min-[1600px]:right-[7%] right-[15%]">
+            <div className="relative h-[550px] min-[1600px]:h-[730px] max-md: max-w-screen-xl mx-auto w-full self-center">
+               <div className="flex min-[1600px]:w-[1010px] w-[800px] max-md:relative max-md:w-[400px] flex-col place-items-center absolute min-[1600px]:right-[7%] right-[15%]">
                   <img src={laptop} alt="" className="" />
-
                   <div className="overflow-y-scroll no-scrollbar min-[1600px]:h-[480px] h-[370px] min-[1600px]:w-[765px] w-[600px] ml-[10px] phone  top-[30px]  absolute z-0">
                      <a
                         href="https://www.facebook.com/profile.php?id=100066757001153"
@@ -102,5 +101,5 @@ export default function SocialMediaManager() {
             </div>
          </div>
       </div>
-   );
+   )
 }
