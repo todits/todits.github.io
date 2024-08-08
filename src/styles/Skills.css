@@ -1,5 +1,9 @@
 .skilltext {
+<<<<<<< HEAD
    height: 100px;
+=======
+   height: 115px;
+>>>>>>> 532a447af784ecb4d3387302bb03dd124afa074d
    max-height: 150px;
    width: 100%;
    display: flex;
@@ -10,7 +14,11 @@
 
 @media (min-width: 1600px) {
    .skilltext {
+<<<<<<< HEAD
       height: 115px;
+=======
+      height: 20vh;
+>>>>>>> 532a447af784ecb4d3387302bb03dd124afa074d
    }
    .skillImage {
       height: 180px;
@@ -35,17 +43,23 @@
    }
    .skilltextpadding {
       padding: 8px 10px;
+<<<<<<< HEAD
       line-height: 1.2;
+=======
+>>>>>>> 532a447af784ecb4d3387302bb03dd124afa074d
    }
    .webkitcenter {
       text-align: -webkit-center;
    }
+<<<<<<< HEAD
    .videoEditing:hover .videoImage {
       transform: scale(1) !important;
    }
    .videoImage {
       width: 60px !important;
    }
+=======
+>>>>>>> 532a447af784ecb4d3387302bb03dd124afa074d
 }
 
 .skilltext:hover {

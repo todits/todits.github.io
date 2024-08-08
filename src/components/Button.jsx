@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 import React, { useContext } from "react"
 import { ThemeContext } from "../context/ThemeContext"
 
 export default function Button({ children }) {
    const { theme } = useContext(ThemeContext)
+=======
+import React, { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
+
+export default function Button({ children }) {
+   const { theme } = useContext(ThemeContext);
+>>>>>>> 532a447af784ecb4d3387302bb03dd124afa074d
    return (
       <button
          className={`px-3 py-[3px] ${
@@ -13,5 +21,9 @@ export default function Button({ children }) {
       >
          {children}
       </button>
+<<<<<<< HEAD
    )
+=======
+   );
+>>>>>>> 532a447af784ecb4d3387302bb03dd124afa074d
 }

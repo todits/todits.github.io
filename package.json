@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "next-app",
   "version": "0.1.0",
   "private": true,
@@ -27,6 +28,8 @@
     "daisyui": "^4.12.10"
   }
 =======
+=======
+>>>>>>> 532a447af784ecb4d3387302bb03dd124afa074d
    "homepage": "./",
    "name": "personal-portfolio",
    "version": "0.1.0",
@@ -88,5 +91,8 @@
       "sass": "^1.77.8",
       "tailwindcss": "^3.4.7"
    }
+<<<<<<< HEAD
 >>>>>>> ec054cbc4aa248a2bc18ff2d60e3abe78218834b
+=======
+>>>>>>> 532a447af784ecb4d3387302bb03dd124afa074d
 }
